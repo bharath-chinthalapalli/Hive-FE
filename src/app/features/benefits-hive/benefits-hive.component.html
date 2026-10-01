@@ -1,0 +1,86 @@
+<main class="overall-page overflow-x-hidden">
+  <div class="w-full bg-[#231F20] text-white z-10 3xs:pl-16 pl-8 py-4">
+    <nav class="tracking-wider">
+      <a routerLink="/" class="hover:underline underline-offset-4">Home</a>
+      /
+      <a routerLink="/services" class="hover:underline underline-offset-4">Services</a>
+      /
+      <span class="text-[#A7A5A6]">Benefits of HIVE</span>
+    </nav>
+  </div>
+
+  <div class="3xs:px-16 px-8 my-10">
+    <div class="my-10 flex flex-col gap-4">
+      <div
+        class="text-[#231F20] font-bold 5xs:text-xs 4xs:text-sm 2xs:text-sm xs:text-sm sm:text-base md:text-base lg:text-base xl:text-lg 2xl:text-lg 3xl:text-lg 4xl:text-lg 5xl:text-xl 6xl:text-xl 7xl:text-2xl 8xl:text-2xl">
+        HIVE encryption <span class="text-[#868484] font-normal">
+          is a foundational security technology, meaning it doesn't directly provide services like "email" or "cloud
+          storage." Instead, it offers core cryptographic capabilities that enable a wide range of highly secure
+          services and solutions across various industries.
+        </span>
+      </div>
+      <div
+        class="text-[#868484] font-normal 5xs:text-xs 4xs:text-sm 2xs:text-sm xs:text-sm sm:text-base md:text-base lg:text-base xl:text-lg 2xl:text-lg 3xl:text-lg 4xl:text-lg 5xl:text-xl 6xl:text-xl 7xl:text-2xl 8xl:text-2xl">
+        Here are the key <span class=" text-[#231F20] font-bold text-lg">
+          "services"
+        </span>
+        or functionalities that HIVE encryption can provide or enable:
+      </div>
+
+      <div class="grid xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 grid-cols-1  w-full gap-12 my-10">
+
+        @for (item of cardList(); track $index) {
+        <div class="relative flex flex-col items-center">
+          <!-- Top Tab -->
+          <!-- <div class="absolute -top-3 bg-[#FAAD17] w-1/2 h-10 rounded-xl z-10" [ngClass]={{item.borderColor= 'orange' ? 'bg-[#FAAD17]' : 'bg-black'}}></div> -->
+
+          <div class="absolute -top-3 sm:w-1/2 w-3/5 sm:h-10 h-7 rounded-xl z-10"
+            [ngClass]="item.borderColor === 'orange' ? 'bg-[#FAAD17]' : 'bg-[#231F20]'">
+          </div>
+          <!-- Main Card -->
+          <div
+            class="border-[12px] h-full rounded-3xl py-10 sm:px-4 px-6 flex flex-col gap-4 bg-white !w-full  relative z-0"
+            [ngClass]="item.borderColor === 'orange' ? 'border-[#FAAD17]' : 'border-[#231F20]'">
+            <div
+              class="text-[#231F20] font-bold 5xs:text-base 4xs:text-base 2xs:text-lg xs:text-lg sm:text-xl md:text-xl lg:text-2xl xl:text-2xl 2xl:text-2xl 3xl:text-2xl 4xl:text-2xl 5xl:text-3xl 6xl:text-3xl 7xl:text-4xl 8xl:text-4xl">
+              {{item.cardTitle}}</div>
+
+            <div class="flex flex-col gap-2">
+              <div
+                class="text-[#231F20] 5xs:text-xs 4xs:text-sm 2xs:text-sm xs:text-sm sm:text-base md:text-base lg:text-base xl:text-lg 2xl:text-lg 3xl:text-lg 4xl:text-lg 5xl:text-xl 6xl:text-xl 7xl:text-2xl 8xl:text-2xl font-bold">
+                Service:</div>
+              <div
+                class="5xs:text-xs 4xs:text-sm 2xs:text-sm xs:text-sm sm:text-base md:text-base lg:text-base xl:text-lg 2xl:text-lg 3xl:text-lg 4xl:text-lg 5xl:text-xl 6xl:text-xl 7xl:text-2xl 8xl:text-2xl font-normal text-[#868484]">
+                {{item.service}}
+              </div>
+            </div>
+
+            <div class="flex flex-col gap-2">
+              <div
+                class="5xs:text-xs 4xs:text-sm 2xs:text-sm xs:text-sm sm:text-base md:text-base lg:text-base xl:text-lg 2xl:text-lg 3xl:text-lg 4xl:text-lg 5xl:text-xl 6xl:text-xl 7xl:text-2xl 8xl:text-2xl font-bold text-[#FAAD17]">
+                Benefits:</div>
+              <div
+                class="5xs:text-xs 4xs:text-sm 2xs:text-sm xs:text-sm sm:text-base md:text-base lg:text-base xl:text-lg 2xl:text-lg 3xl:text-lg 4xl:text-lg 5xl:text-xl 6xl:text-xl 7xl:text-2xl 8xl:text-2xl font-normal text-[#868484]">
+                {{item.bebefits}}
+              </div>
+            </div>
+          </div>
+
+          <!-- @if ($index < cardList().length - 3) { 
+            <div
+              class="w-0 h-0 border-l-[35px] border-r-[35px] border-t-[50px] border-l-transparent border-r-transparent -mt-1"
+              [ngClass]="item.borderColor === 'orange' ? 'border-t-[#FAAD17]' : 'border-t-black'">
+            </div>
+          } -->
+          @if ($index < cardList().length - 3) { 
+            <div class="-mt-4">
+              <img [src]="item.borderColor === 'orange' ? 'polygon_white.svg' : 'polygon_black.svg'" alt="polygon">
+            </div>
+          }
+      </div>
+      }
+
+    </div>
+  </div>
+  </div>
+</main>

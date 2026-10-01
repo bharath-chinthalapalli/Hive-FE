@@ -1,0 +1,49 @@
+<p class="intro-text">
+  We construct a prototype of the encryption system with the following design criteria:
+</p>
+<section class="criteria-table">
+  <header class="table-header">
+    <div class="table-row table-header-row">
+      <div class="index-column header-cell"></div>
+      <div class="criteria-column header-cell">Criteria</div>
+      <div class="size-column header-cell">Size</div>
+      <div class="complexity-column header-cell">Complexity</div>
+    </div>
+  </header>
+
+  <div class="table-body">
+    <div class="table-row">
+      <div class="index-column">1</div>
+      <div class="criteria-column">MAP SIZE</div>
+      <div class="size-column">32,000 cell</div>
+      <div class="complexity-column">
+        <div class="complexity-row">
+          <span class="base">2</span>
+          <span class="exponent">32,000</span>
+        </div>
+        <div class="complexity-row">
+          <span class="base">9x10</span>
+          <span class="exponent">329,632000</span>
+        </div>
+        <span class="note">(possible unique encryption path)</span>
+      </div>
+    </div>
+
+    <div class="table-row">
+      <div class="index-column">2</div>
+      <div class="criteria-column">Encryption Key Size</div>
+      <div class="size-column">64 cell</div>
+      <div class="complexity-column">
+        <div class="complexity-row">
+          <span class="base">32,000</span>
+          <span class="exponent">64</span>
+        </div>
+        <div class="complexity-row">
+          <span class="base">2x10</span>
+          <span class="exponent">288</span>
+        </div>
+        <span class="note">(possible keys)</span>
+      </div>
+    </div>
+  </div>
+</section>

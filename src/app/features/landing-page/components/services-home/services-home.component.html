@@ -1,0 +1,117 @@
+<section class="mx-14 ">
+    <h2 class="section-title text-4xl  !text-[#FAAD17]">Latest Insights
+        <span class="text-black">
+            & Resources
+        </span>
+    </h2>
+    <!-- <div class="services-container">
+        <button class="nav-button left" (click)="scrollLeft()">
+            <span>←</span>
+        </button>
+        <div #servicesGrid class="services-grid ">
+            <div class="service-card">
+                <div class="flex flex-col rounded-md bg-white hover:shadow-lg p-2">
+                    <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/d28d5934afc783ca4a3f68f7ac2ead62dda1bec7?placeholderIfAbsent=true&apiKey=80db7a94ff96497195a901986eba8c45"
+                        class="card-image" alt="Inside Hive's Non-Mathematical Encryption Engine" alt="">
+                    <div class="flex items-center gap-2 -mt-10 bg-[#FFFFE4] p-2 rounded-sm text-base w-fit">
+                        <p>21 May 2024</p>
+                        <p>&bull;</p>
+                        <p>Technology Insight</p>
+                    </div>
+                    <div class=" py-6">
+                        <h1 class="text-2xl font-bold hover:text-[#FAAD17]">
+                            Hive vs Traditional
+                            Encryption: Side-by-Side Comparison
+                        </h1>
+                    </div>
+                </div>
+            </div>
+            <div class="service-card">
+                <div class="flex flex-col rounded-md bg-white hover:shadow-lg p-2">
+                    <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/72bf815335095d009cb79d1efd54d98dc8b4f26c?placeholderIfAbsent=true&apiKey=80db7a94ff96497195a901986eba8c45"
+                        class="card-image" alt="Inside Hive's Non-Mathematical Encryption Engine" alt="">
+                    <div class="flex items-center gap-2 -mt-10 bg-[#FFFFE4] p-2 rounded-sm text-base w-fit">
+                        <p>21 May 2024</p>
+                        <p>&bull;</p>
+                        <p>Technology Insight</p>
+                    </div>
+                    <div class=" py-6">
+                        <h1 class="text-2xl font-bold hover:text-[#FAAD17]">
+                            Inside Hive’s Non-Mathematical Encryption Engine
+                        </h1>
+                    </div>
+                </div>
+            </div>
+            <div class="service-card">
+                <div class="flex flex-col rounded-md bg-white hover:shadow-lg p-2">
+                    <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/5de0e013f79debfb4c7343854d90ab042eb1688e?placeholderIfAbsent=true&apiKey=80db7a94ff96497195a901986eba8c45"
+                        class="card-image" alt="Inside Hive's Non-Mathematical Encryption Engine" alt="">
+                    <div class="flex items-center gap-2 -mt-10 bg-[#FFFFE4] p-2 rounded-sm text-base w-fit">
+                        <p>21 May 2024</p>
+                        <p>&bull;</p>
+                        <p>Technology Insight</p>
+                    </div>
+                    <div class=" py-6">
+                        <h1 class="text-2xl font-bold hover:text-[#FAAD17]">
+                            Why Quantum-Resistant Encryption is No Longer Optional
+                        </h1>
+                    </div>
+                </div>
+            </div>
+            <div class="service-card">
+                <div class="flex flex-col rounded-md bg-white hover:shadow-lg p-2">
+                    <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/72bf815335095d009cb79d1efd54d98dc8b4f26c?placeholderIfAbsent=true&apiKey=80db7a94ff96497195a901986eba8c45"
+                        class="card-image" alt="Inside Hive's Non-Mathematical Encryption Engine" alt="">
+                    <div class="flex items-center gap-2 -mt-10 bg-[#FFFFE4] p-2 rounded-sm text-base w-fit">
+                        <p>21 May 2024</p>
+                        <p>&bull;</p>
+                        <p>Technology Insight</p>
+                    </div>
+                    <div class=" py-6">
+                        <h1 class="text-2xl font-bold hover:text-[#FAAD17]">
+                            Hive Map Explained: How Spatial Encryption Changes the Game
+                        </h1>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    
+        <button class="nav-button right" (click)="scrollRight()">
+            <span>→</span>
+        </button>
+    </div> -->
+
+
+    <div class="my-4 ">
+        <ngx-slick-carousel #slickModal="slick-carousel" class="carousel  " [config]="slideConfig">
+            @for (card of cards; track card) {
+
+            <div ngxSlickItem class="mx-4 mb-16 mt-4 service-card h-full">
+                <div class="flex flex-col justify-between h-full bg-white hover:shadow-lg p-2 rounded-md group">
+                    <img [src]="card.image" class="card-image" alt="Inside Hive's Non-Mathematical Encryption Engine">
+                    <div class="flex items-center gap-2 -mt-8 bg-[#FFFFE4] px-4 py-1 rounded-sm text-base w-fit">
+                        <p class="text-xs">{{card.date}}</p>
+                        <p>&bull;</p>
+                        <p class="text-xs">{{card.category}}</p>
+                    </div>
+                    <div class="py-6">
+                        <h1 class="text-xl font-bold group-hover:text-[#FAAD17] transition-colors duration-300">
+                            {{card.title}}
+                        </h1>
+                    </div>
+                </div>
+            </div>
+            }
+
+        </ngx-slick-carousel>
+
+    </div>
+    <div class="!m-auto text-center !mt-0">
+        <button
+            class="bg-black rounded-md text-white px-6 py-3 w-fit hover:bg-[#FAAD17] hover:text-black font-semibold">
+            Subscribe to Our Newsletter
+        </button>
+    </div>
+
+</section>

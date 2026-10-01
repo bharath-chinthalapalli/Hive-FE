@@ -1,0 +1,160 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+
+.section-title {
+  //  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.2;
+  //  margin: 0;
+}
+
+// Reset and base styles
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-family-base;
+  font-size: $font-size-base;
+  line-height: $line-height-base;
+  color: $dark-color;
+  background-color: $light-color;
+}
+
+// Common utility classes
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 $spacing-md;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-left {
+  text-align: left;
+}
+
+// Common spacing classes
+.m-0 {
+  margin: 0;
+}
+
+.m-1 {
+  margin: $spacing-xs;
+}
+
+.m-2 {
+  margin: $spacing-sm;
+}
+
+.m-3 {
+  margin: $spacing-md;
+}
+
+.m-4 {
+  margin: $spacing-lg;
+}
+
+.m-5 {
+  margin: $spacing-xl;
+}
+
+.p-0 {
+  padding: 0;
+}
+
+.p-1 {
+  padding: $spacing-xs;
+}
+
+.p-2 {
+  padding: $spacing-sm;
+}
+
+.p-3 {
+  padding: $spacing-md;
+}
+
+.p-4 {
+  padding: $spacing-lg;
+}
+
+.p-5 {
+  padding: $spacing-xl;
+}
+
+// Common flex classes
+.d-flex {
+  @include flex;
+}
+
+.flex-column {
+  @include flex(column);
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.align-center {
+  align-items: center;
+}
+
+// Common button styles
+.btn {
+  @include button-style;
+
+  &-secondary {
+    @include button-style($secondary-color);
+  }
+
+  &-success {
+    @include button-style($success-color);
+  }
+
+  &-danger {
+    @include button-style($danger-color);
+  }
+}
+
+// Common card style
+.card {
+  @include card-style;
+}
+
+// Common text styles
+.text-truncate {
+  @include truncate;
+}
+
+.text-truncate-2 {
+  @include truncate(2);
+}
+
+// Common responsive classes
+@include respond-to(sm) {
+  .hide-sm {
+    display: none;
+  }
+}
+
+@include respond-to(md) {
+  .hide-md {
+    display: none;
+  }
+}
+
+@include respond-to(lg) {
+  .hide-lg {
+    display: none;
+  }
+}

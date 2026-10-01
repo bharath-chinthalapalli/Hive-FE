@@ -1,0 +1,66 @@
+.attack-analysis {
+    width: 100%;
+    margin-top: 18px;
+  }
+
+  .section-title {
+    color: #231f20;
+    font-size: 18px;
+    font-family: Inter, -apple-system, Roboto, Helvetica, sans-serif;
+    font-weight: 400;
+    margin-bottom: 18px;
+  }
+
+  .analysis-table {
+    width: 100%;
+    border: 1px solid #dddade;
+  }
+
+  .table-header {
+    background-color: #ffffe4;
+    padding: 11px 22px;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.56px;
+    border-bottom: 1px solid #dddade;
+  }
+
+  .header-row {
+    display: grid;
+    grid-template-columns: 50px 150px 1fr 1fr;
+    gap: 20px;
+  }
+
+  .header-cell {
+    font-size: 14px;
+    font-weight: 700;
+    margin: 0;
+  }
+
+  .table-row {
+    display: grid;
+    grid-template-columns: 50px 150px 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+    border-bottom: 1px solid #dddade;
+    background-color: #fff;
+  }
+
+  .cell {
+    font-family: Open Sans, -apple-system, Roboto, Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 0.56px;
+  }
+
+  @media (max-width: 991px) {
+    .header-row,
+    .table-row {
+      grid-template-columns: 1fr;
+      padding: 15px;
+    }
+
+    .cell {
+      padding: 5px 0;
+    }
+  }

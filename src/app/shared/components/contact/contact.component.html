@@ -1,0 +1,104 @@
+<div class="contact-container">
+  <div class="support-section">
+    <div class="support-content">
+      <div class="support-text">
+        <h2 class="support-title">Need Help or Have a Question?</h2>
+        <p class="support-description">
+          Our experts are here to guide you — whether it's a technical issue or
+          just a quick query.
+        </p>
+      </div>
+      <div class="support-actions pt-2 !lg:pt-0">
+        <button class="support-button support-button--primary" (click)="navigateToDemo()">
+          Contact Support
+        </button>
+        <button class="support-button support-button--secondary">
+          Browse FAQs
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-sections">
+        <div class="footer-brand">
+          <h1 class="footer-logo">HIVE | الخَـلــيِّـة</h1>
+          <div class="contact-info">
+            <img
+              src="https://cdn.builder.io/api/v1/image/assets/TEMP/e07977610966f76f4ace2673360090e0117b62fb?placeholderIfAbsent=true&apiKey=80db7a94ff96497195a901986eba8c45"
+              alt="Phone icon" class="contact-icon" />
+            <span class="phone-number">+966-11-456-7890</span>
+          </div>
+        </div>
+
+        <div class="footer-nav">
+          <h3 class="footer-nav-title">Product</h3>
+          <nav class="footer-nav-links">
+            <a *ngFor="let link of productLinks" [routerLink]="link.route">{{
+              link.name
+              }}</a>
+          </nav>
+        </div>
+
+        <div class="footer-nav">
+          <h3 class="footer-nav-title">Company</h3>
+          <nav class="footer-nav-links">
+            <a *ngFor="let link of companyLinks" [routerLink]="link.route">{{
+              link.name
+              }}</a>
+
+          </nav>
+        </div>
+
+        <div class="footer-nav">
+          <h3 class="footer-nav-title">Resources</h3>
+          <nav class="footer-nav-links">
+            <a *ngFor="let link of resourceLinks" [routerLink]="link.route">{{
+              link.name
+              }}</a>
+          </nav>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+</div>
+<div class="footer-bottom">
+  <div class="footer-bottom-content">
+    <img
+      src="footer_logo_icon.svg"
+      class="footer-logo" alt="Hive Logo" />
+    <div class="footer-links">
+      <a href="#" class="footer-link">Terms of Use</a>
+      <a href="#" class="footer-link">Disclaimer</a>
+      <a href="#" class="footer-link">Privacy Notice</a>
+    </div>
+    <div class="copyright">All rights reserved to Hive © 2025</div>
+     <div class="flex items-center gap-2">
+      <img src="facebook_icon.svg" alt="facebook_icon" class="w-full">
+      <img src="linkedin_icon.svg" alt="linkedin_icon" class="w-full">
+      <img src="twitter_icon.svg" alt="twitter_icon" class="w-full">
+    </div>
+    <!-- <img
+      src="https://cdn.builder.io/api/v1/image/assets/TEMP/64a43d9d346105ac2bb9ebf2ea2face80d9587b6?placeholderIfAbsent=true&apiKey=80db7a94ff96497195a901986eba8c45"
+      class="footer-badge" alt="Footer badge" /> -->
+  </div>
+</div> 
+<!-- <div class="w-full mx-14 py-4 overflow-hidden">
+  <div class="flex item-center justify-around">
+    <div>
+      <img src="footer_icon.svg" alt="footer_icon" class="w-full">
+    </div>
+    <div class="flex flex-row gap-2">
+      <a href="#" class="footer-link">Terms of Use</a>
+      <a href="#" class="footer-link">Disclaimer</a>
+      <a href="#" class="footer-link">Privacy Notice</a>
+    </div>
+    <div class="flex items-center gap-2">
+      <img src="facebook_icon.svg" alt="facebook_icon" class="w-full">
+      <img src="linkedin_icon.svg" alt="linkedin_icon" class="w-full">
+      <img src="twitter_icon.svg" alt="twitter_icon" class="w-full">
+    </div>
+  </div>
+</div> -->

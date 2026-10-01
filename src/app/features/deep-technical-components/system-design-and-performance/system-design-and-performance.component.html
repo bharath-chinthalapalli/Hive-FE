@@ -1,0 +1,97 @@
+<div class="flex flex-col gap-4 ">
+    <div class="text-center ">
+        <div class="font-bold 5xs:text-xl 4xs:text-2xl 3xs:text-2xl 2xs:text-2xl xs:text-2xl sm:text-2xl lg:text-3xl xl:text-3xl 2xl:text-4xl 3xl:text-4xl 4xl:text-4xl 5xl:text-4xl 6xl:text-5xl 7xl:text-5xl 8xl:text-6xl text-[#FAAD17]">Rigorous Proofs and
+            <span class="text-[#231F20]">
+                Unparalleled Attack Resistance
+            </span>
+        </div>
+    </div>
+    <div class="flex flex-col gap-4 ">
+        <div class="5xs:text-xs 4xs:text-xs 3xs:text-sm 2xs:text-sm xs:text-base sm:text-base md:text-lg lg:text-lg xl:text-xl 3xl:text-2xl 4xl:text-2xl 5xl:text-2xl 6xl:text-3xl 7xl:text-3xl 8xl:text-4xl font-bold text-center text-[#231F20] mb-2 ">
+            Encryption System Design and Performance
+        </div>
+        <div class="5xs:text-xs 4xs:text-xs 3xs:text-sm 2xs:text-sm xs:text-base sm:text-base md:text-lg lg:text-lg xl:text-lg 3xl:text-lg 4xl:text-2xl 5xl:text-2xl 6xl:text-2xl 7xl:text-2xl 8xl:text-3xl text-[#868484] !leading-relaxed">
+            We construct a prototype of the encryption system with the following design criteria:
+        </div>
+
+            <div class="overflow-x-auto">
+                <table class="min-w-full text-[#231F20] border-t-[1px] border-b-[1px] border-[#DBDADE] 5xs:text-xs 4xs:text-xs 3xs:text-sm 2xs:text-sm xs:text-base sm:text-base md:text-base lg:text-base xl:text-base 3xl:text-lg 4xl:text-lg 5xl:text-xl 6xl:text-xl 7xl:text-xl 8xl:text-2xl">
+                    <thead class="bg-[#FFFFE4]">
+                        <tr class="text-left font-semibold">
+                            <th class="px-4 py-2 border-b w-[5%] border-r">#</th>
+                            <th class="px-4 py-2 border-b w-[25%] border-r">Criteria</th>
+                            <th class="px-4 py-2 border-b w-[20%] border-r">Size</th>
+                            <th class="px-4 py-2 border-b w-[50%] border-r">Complexity</th>
+                        </tr>
+                    </thead>
+                    <tbody class="bg-white">
+                        <tr class="border-b">
+                            <td class="px-4 py-2 border-r">1</td>
+                            <td class="px-4 py-2 border-r">Map size</td>
+                            <td class="px-4 py-2 border-r">32,000 cell</td>
+                            <td class="px-4 py-2 border-r">
+                                2<sup class="text-[7px] align-super mr-[10px]">32,000</sup>9×10<sup class="text-[7px] align-super mr-[10px]">329,632000    </sup> <span>(possible unique
+                                    encryption path)</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="px-4 py-2 border-r">2</td>
+                            <td class="px-4 py-2 border-r">Encryption key size</td>
+                            <td class="px-4 py-2 border-r">64 cell</td>
+                            <td class="px-4 py-2 border-r">
+                                32,000<sup class="text-[7px] align-super mr-[10px]">64</sup>2×10<sup class="text-[7px] align-super mr-[10px]">288    </sup> <span>(possible
+                                    keys)</span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+  
+        <div class="5xs:text-xs 4xs:text-xs 3xs:text-sm 2xs:text-sm xs:text-base sm:text-base md:text-lg lg:text-lg xl:text-lg 3xl:text-lg 4xl:text-2xl 5xl:text-2xl 6xl:text-2xl 7xl:text-2xl 8xl:text-3xl text-[#868484] !leading-relaxed">
+            With the above design criteria the strength of the systems are analyzed as follows:</div>
+        <div class="5xs:text-xs 4xs:text-xs 3xs:text-sm 2xs:text-sm xs:text-base sm:text-base md:text-lg lg:text-lg xl:text-lg 3xl:text-lg 4xl:text-2xl 5xl:text-2xl 6xl:text-2xl 7xl:text-2xl 8xl:text-3xl text-[#868484] !leading-relaxed">
+            The memory footprint of the design: 32,000 × ((16 × 8) + 16) = 4,608,000 bits = 576Kbyte.
+        </div>
+    </div>
+    <div class="flex flex-col gap-4">
+        <div class="5xs:text-xs 4xs:text-xs 3xs:text-sm 2xs:text-sm xs:text-base sm:text-base md:text-lg lg:text-lg xl:text-lg 3xl:text-lg 4xl:text-2xl 5xl:text-2xl 6xl:text-2xl 7xl:text-2xl 8xl:text-3xl text-[#868484] !leading-relaxed">
+            Figure 4 below illustrates how much time it would take before encryption path is repeated against different
+            map sizes. We use log scale for the time length on the y-axis.
+        </div>
+        <div class="5xs:text-xs 4xs:text-xs 3xs:text-sm 2xs:text-sm xs:text-base sm:text-base md:text-lg lg:text-lg xl:text-lg 3xl:text-lg 4xl:text-2xl 5xl:text-2xl 6xl:text-2xl 7xl:text-2xl 8xl:text-3xl font-bold text-[#727272] text-center">
+            HSE Path Period Vs Map Size
+        </div>
+        <img src="periodVsMap.svg" alt="periodVsMap" class="bg-cover m-auto lg:w-3/4 sm:w-full">
+        <div class="5xs:text-xs 4xs:text-xs 3xs:text-sm 2xs:text-sm xs:text-base sm:text-base md:text-lg lg:text-lg xl:text-lg 3xl:text-lg 4xl:text-2xl 5xl:text-2xl 6xl:text-2xl 7xl:text-2xl 8xl:text-3xl  font-bold text-[#231F20] text-center my-2">
+            Figure 4. The Relationship between the encryption path repetition
+            period length and encryption map size
+        </div>
+    </div>
+    <div class="flex flex-col gap-4">
+        <div class="5xs:text-xs 4xs:text-xs 3xs:text-sm 2xs:text-sm xs:text-base sm:text-base md:text-lg lg:text-lg xl:text-lg 3xl:text-lg 4xl:text-2xl 5xl:text-2xl 6xl:text-2xl 7xl:text-2xl 8xl:text-3xl  font-normal text-[#868484] !leading-relaxed">
+            Figure 5 shows how the complexity of the encryption key (i.e., the number of possible key combinations)
+            increases with the key size.
+        </div>
+        <div class="5xs:text-xs 4xs:text-xs 3xs:text-sm 2xs:text-sm xs:text-base sm:text-base md:text-lg lg:text-lg xl:text-lg 3xl:text-lg 4xl:text-2xl 5xl:text-2xl 6xl:text-2xl 7xl:text-2xl 8xl:text-3xl font-bold text-[#727272] text-center">
+            Key complexity vs Key size for a map with 1000 cells
+        </div>
+        <img src="keyComplexityVsSize.svg" alt="keyComplexityVsSize" class="bg-cover m-auto lg:w-3/4 sm:w-full">
+        <div class="5xs:text-xs 4xs:text-xs 3xs:text-sm 2xs:text-sm xs:text-base sm:text-base md:text-lg lg:text-lg xl:text-lg 3xl:text-lg 4xl:text-2xl 5xl:text-2xl 6xl:text-2xl 7xl:text-2xl 8xl:text-3xl font-medium text-center text-[#727272]" >Key Size (Cells)</div>
+        <div class="5xs:text-xs 4xs:text-xs 3xs:text-sm 2xs:text-sm xs:text-base sm:text-base md:text-lg lg:text-lg xl:text-lg 3xl:text-lg 4xl:text-2xl 5xl:text-2xl 6xl:text-2xl 7xl:text-2xl 8xl:text-3xl  font-bold text-[#231F20] text-center my-2">
+            Figure 5. The relationship between the encryption key complexity and encryption key size
+        </div>
+    </div>
+    <div class="flex flex-col gap-4">
+        <div class="5xs:text-xs 4xs:text-xs 3xs:text-sm 2xs:text-sm xs:text-base sm:text-base md:text-lg lg:text-lg xl:text-lg 3xl:text-lg 4xl:text-2xl 5xl:text-2xl 6xl:text-2xl 7xl:text-2xl 8xl:text-3xl font-normal text-[#868484] !leading-relaxed">
+            Figure 6 shows how key complexity increases with the encryption map size for a fixed key size of 64 cells.
+        </div>
+        <div class="5xs:text-xs 4xs:text-xs 3xs:text-sm 2xs:text-sm xs:text-base sm:text-base md:text-lg lg:text-lg xl:text-lg 3xl:text-lg 4xl:text-2xl 5xl:text-2xl 6xl:text-2xl 7xl:text-2xl 8xl:text-3xl font-bold text-[#727272] text-center">
+            Key complexity Vs Map size for key of 32 Cells </div>
+        <img src="KeyComplexityVsMapSize.svg" alt="KeyComplexityVsMapSize" class="bg-cover m-auto lg:w-3/4 sm:w-full">
+        <div class="5xs:text-xs 4xs:text-xs 3xs:text-sm 2xs:text-sm xs:text-base sm:text-base md:text-lg lg:text-lg xl:text-lg 3xl:text-lg 4xl:text-2xl 5xl:text-2xl 6xl:text-2xl 7xl:text-2xl 8xl:text-3xl font-bold text-[#231F20] text-center my-2">
+            Figure 6. The Relationship between the Encryption Key Complexity and
+            Encryption Map Size
+        </div>
+    </div>
+</div>

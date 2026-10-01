@@ -1,0 +1,173 @@
+<main class="overall-page min-h-screen overflow-x-hidden ">
+    @if (showTechnicalSpecifications()) {
+    <div id="hero-section" class="mb-4">
+        <div class="w-full bg-[#231F20] text-white z-10 3xs:pl-16 pl-8 py-4">
+            <!-- <a class="tracking-wider" routerLink="/">Home / <span class="text-gray-400">Services</span></a> -->
+            <nav class="tracking-wider">
+                <a routerLink="/" class="hover:underline underline-offset-4 cursor-pointer">Home</a>
+                /
+                <span class="text-[#A7A5A6]">Deep Technical</span>
+            </nav>
+        </div>
+        <div class="block xl:flex items-start my-6 3xs:px-16 px-6">
+            <div class=" w-full xl:w-1/2 3xs:px-0 px-2">
+                <img src="deep_technical_hero_img.svg" alt="mission_full_image" class="w-full bg-cover rendering-pixelated" loading="lazy" decoding="async">
+            </div>
+            <div
+                class="w-full  lg:w-full xl:w-3/4 xl:-ml-10 -ml-0 mt-16 bg-white shadow-xl rounded-md 7xl:p-12 p-6 lg:z-0 z-10 flex flex-col gap-4">
+                <div
+                    class="font-bold 5xs:text-xl 4xs:text-2xl 3xs:text-2xl 2xs:text-2xl xs:text-2xl sm:text-2xl lg:text-3xl xl:text-3xl 2xl:text-4xl 3xl:text-4xl 4xl:text-4xl 5xl:text-4xl 6xl:text-5xl 7xl:text-5xl 8xl:text-6xl text-[#FAAD17] ">
+                    Expert support<span class="text-[#231F20]"> to enhance your security and resilience!</span>
+                </div>
+                <div class="font-normal text-[#231F20] 5xs:text-xs 4xs:text-xs 3xs:text-sm 2xs:text-sm xs:text-base sm:text-base md:text-lg lg:text-lg xl:text-lg 3xl:text-lg 4xl:text-2xl 5xl:text-2xl 6xl:text-2xl 7xl:text-3xl 8xl:text-3xl">
+                    Our range of specialist encryption and decryption services starts by the sender and receiver getting
+                    a
+                    copy of a common HIVE map. This is used for the encryption and decryption of data between them.
+                </div>
+                <div class="font-bold text-[#FAAD17] 5xs:text-xs 4xs:text-xs 3xs:text-sm 2xs:text-sm xs:text-base sm:text-base md:text-lg lg:text-lg xl:text-lg 3xl:text-lg 4xl:text-2xl 5xl:text-2xl 6xl:text-2xl 7xl:text-3xl 8xl:text-3xl">
+                    Managed detection and response-
+                    <span class="text-[#231F20] font-normal">
+                        The sender will do the setup of encryption and will tune the map using a set of defined
+                        parameters.
+                        On the other hand, the receiver will tune according to the sender’s map.
+                    </span>
+                </div>
+                <div class="font-bold text-[#FAAD17] 5xs:text-xs 4xs:text-xs 3xs:text-sm 2xs:text-sm xs:text-base sm:text-base md:text-lg lg:text-lg xl:text-lg 3xl:text-lg 4xl:text-2xl 5xl:text-2xl 6xl:text-2xl 7xl:text-3xl 8xl:text-3xl">
+                    Getting ready with the key–
+                    <span class="text-[#231F20] font-normal">
+                        The sender will generate an encryption key from the map, which can be used symmetrically with
+                        the
+                        receiver for the encryption process. The size of the key will vary depending on the agreed
+                        parameters between the sender and receiver. </span>
+                </div>
+                <div class="font-bold text-[#FAAD17] 5xs:text-xs 4xs:text-xs 3xs:text-sm 2xs:text-sm xs:text-base sm:text-base md:text-lg lg:text-lg xl:text-lg 3xl:text-lg 4xl:text-2xl 5xl:text-2xl 6xl:text-2xl 7xl:text-3xl 8xl:text-3xl">
+                    Resolving your security challenges–
+                    <span class="text-[#231F20] font-normal">
+                        The encryption process will take place and cipher text is streamed down the insecure
+                        communication
+                        channel between the sender and receiver. The receiver finally uses the HIVE map and encryption
+                        key
+                        to decrypt the cipher text into the original plain text that was sent. </span>
+                </div>
+            </div>
+        </div>
+        <div class=" 3xs:px-16 px-6 my-2">
+            <div class="bg-[#FFFFE4] py-4 px-6 rounded-sm w-full block lg:flex items-center justify-between ">
+                <div class="5xs:text-base 4xs:text-base 3xs:text-base 2xs:text-lg xs:text-lg sm:text-lg md:text-xl lg:text-xl xl:text-xl 2xl:text-xl 3xl:text-xl 4xl:text-xl 5xl:text-xl 6xl:text-2xl 7xl:text-3xl 8xl:text-4xl text-[#231F20]">To learn more about HIVE, you can download the document or explore the content below.</div>
+                <a href="2_JISSec.Vol14_Iss.2_Barnawi.pdf" download
+                    class="text-[#231F20] 5xs:text-lg 4xs:text-lg 3xs:text-lg 2xs:text-xl xs:text-xl sm:text-xl md:text-xl lg:text-xl xl:text-xl 2xl:text-xl 3xl:text-xl 4xl:text-xl 5xl:text-xl 6xl:text-2xl 7xl:text-3xl 8xl:text-4xl flex items-center gap-2 font-medium  mt-2 lg:mt-0">
+                    <img src="download_icon.svg" alt="download_icon" class="">
+                    Download
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class=" my-4 3xs:px-16 px-6 " id="technical-specifications">
+        <app-technical-specifications></app-technical-specifications>
+        <div class="bg-[#FFFFE4] p-4  w-full  text-center m-auto my-5 cursor-pointer" (click)="openAlgorithm()">
+            <button class="text-[#FAAD17] text-lg font-medium">
+                Read More
+                <span>
+                    <mat-icon class="pt-1">
+                        keyboard_arrow_down
+                    </mat-icon>
+                </span>
+            </button>
+        </div>
+    </div>
+    }
+
+    @if(showAlgorithm()){
+    <div class=" my-4 3xs:px-16 px-6 flex flex-col gap-7 " id="algorithm_description">
+        <div class="bg-[#FFFFE4] p-4   w-full  text-center m-auto my-3 cursor-pointer" (click)="closeAlgorithm()">
+            <button class="text-[#FAAD17] text-lg font-medium">
+                Read less
+                <span>
+                    <mat-icon class="pt-1">
+                        expand_less
+                    </mat-icon>
+                </span>
+            </button>
+        </div>
+        <app-algorithm></app-algorithm>
+        <div class="bg-[#FFFFE4] p-4 w-full  text-center m-auto my-3 cursor-pointer" (click)="openSystemDesign()">
+            <button class="text-[#FAAD17] text-lg font-medium">
+                Read More
+                <span>
+                    <mat-icon class="pt-1">
+                        keyboard_arrow_down
+                    </mat-icon>
+                </span>
+            </button>
+        </div>
+    </div>
+    }
+
+    @if(showSystemDesign()){
+    <div class="my-4 3xs:px-16 px-7 flex flex-col gap-7 " id="system_design_and_performance">
+        <div class="bg-[#FFFFE4] p-4  w-full  text-center m-auto my-3 cursor-pointer" (click)="closeSystemDesign()">
+            <button class="text-[#FAAD17] text-lg font-medium">
+                Read less
+                <span>
+                    <mat-icon class="pt-1">
+                        expand_less
+                    </mat-icon>
+                </span>
+            </button>
+        </div>
+        <app-system-design-and-performance></app-system-design-and-performance>
+        <div class="bg-[#FFFFE4] p-4  w-full  text-center m-auto my-3 cursor-pointer" (click)="openCommonCipher()">
+            <button class="text-[#FAAD17] text-lg font-medium">
+                Read More
+                <span>
+                    <mat-icon class="pt-1">
+                        keyboard_arrow_down
+                    </mat-icon>
+                </span>
+            </button>
+        </div>
+    </div>
+    }
+    @if(showCommonCipher()){
+    <div class="my-4 3xs:px-16 px-7 flex flex-col gap-7 " id="common_cipher_attacks">
+        <div class="bg-[#FFFFE4] p-4  w-full  text-center m-auto my-3 cursor-pointer" (click)="closeCommonCipher()">
+            <button class="text-[#FAAD17] text-lg font-medium">
+                Read less
+                <span>
+                    <mat-icon class="pt-1">
+                        expand_less
+                    </mat-icon>
+                </span>
+            </button>
+        </div>
+        <app-common-cipher-attacks></app-common-cipher-attacks>
+        <div class="bg-[#FFFFE4] p-4  w-full  text-center m-auto my-3 cursor-pointer" (click)="openPublicPrivateKey()">
+            <button class="text-[#FAAD17] text-lg font-medium">
+                Read More
+                <span>
+                    <mat-icon class="pt-1">
+                        keyboard_arrow_down
+                    </mat-icon>
+                </span>
+            </button>
+        </div>
+    </div>
+    }
+    @if(showPublicPrivateKey()){
+    <div class="my-4 3xs:px-16 px-7 flex flex-col gap-7 " id="public_private_key_capabilities">
+        <div class="bg-[#FFFFE4] p-4  w-full  text-center m-auto my-3 cursor-pointer" (click)="closePublicPrivateKey()">
+            <button class="text-[#FAAD17] text-lg font-medium">
+                Read less
+                <span>
+                    <mat-icon class="pt-1">
+                        expand_less
+                    </mat-icon>
+                </span>
+            </button>
+        </div>
+        <app-public-private-key-capabilities></app-public-private-key-capabilities>
+    </div>
+    }
+
+</main>

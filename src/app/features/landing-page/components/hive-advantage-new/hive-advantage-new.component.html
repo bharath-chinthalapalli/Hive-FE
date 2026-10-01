@@ -1,0 +1,38 @@
+<section class="3xs:px-[48px] px-10 flex flex-col gap-7 py-12">
+    <div class="m-auto text-center flex flex-col gap-2">
+        <div class="font-bold 5xs:text-xl 4xs:text-2xl 3xs:text-2xl 2xs:text-2xl xs:text-2xl sm:text-2xl lg:text-3xl xl:text-3xl 2xl:text-4xl 3xl:text-4xl 4xl:text-4xl 5xl:text-4xl 6xl:text-5xl 7xl:text-5xl 8xl:text-6xl text-[#FAAD17]">HIVE
+            <span class="text-[#231F20]">
+                Advantage
+            </span>
+        </div>
+        <div class="5xs:text-xs 4xs:text-xs 3xs:text-xs 2xs:text-xs xs:text-sm sm:text-sm md:text-base lg:text-base xl:text-base 2xl:text-lg 3xl:text-lg 4xl:text-xl 5xl:text-xl 6xl:text-2xl 7xl:text-2xl 8xl:text-3xl text-[#231F20] font-normal ">
+            Introducing HIVE: Security beyond conventional limits
+        </div>
+    </div>
+    <div class="grid xl:grid-cols-5 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 xs:grid-cols-1 lg:gap-0 gap-4">
+        @for (item of allInductriesListNew(); track item) {
+        <div class="hex-bg group cursor-pointer transition-all duration-300 relative 5xs:w-56 5xs:h-56 3xs:w-56 3xs:h-80 2xs:w-48 2xs:h-72 xs:w-96 xs:h-96 sm:w-full sm:h-72 md:w-60 md:h-56  lg:w-64 lg:h-64  xl:w-60 xl:h-64  2xl:w-64 2xl:h-64 3xl:w-72 3xl:h-72 4xl:w-80 4xl:h-80 5xl:w-[350px] 5xl:h-[350px] 6xl:w-[360px] 6xl:h-[360px] 7xl:w-[380px] 7xl:h-[380px] 8xl:w-[400px] 8xl:h-[400px] flex flex-col justify-center mx-auto   ">
+            <!-- Hex Hover BG -->
+            <div class="hex-hover-bg  group-hover:bg-[#FAAD17] transition-all duration-300 absolute inset-0 z-0"></div>
+            <!-- Card Content max-w-[220px] h-[260px] -->
+            <div class="relative z-10 flex flex-col justify-center gap-1 w-full p-8 items-center text-center">
+                <img [src]="item.image" class="rendering-pixelated disable-blur group-hover:hidden  transition-all duration-300 8xl:w-1/4 7xl:w-2/12 6xl:w-16 5xl:w-16 4xl:w-14 3xl:w-12 2xl:w-11 xl:w-12 lg:w-12 md:w-12 sm:w-14 xs:w-16 2xs:w-20 3xs:w-20 4xs:w-18 5xs:w-12" [alt]="item.image" />
+                <img [src]="item.image_white" class="rendering-pixelated disable-blur hidden group-hover:block transition-all duration-300 8xl:w-1/4 7xl:w-2/12 6xl:w-16 5xl:w-16 4xl:w-14 3xl:w-12 2xl:w-11 xl:w-12 lg:w-12 md:w-12 sm:w-14 xs:w-16 2xs:w-20 3xs:w-20 4xs:w-18 5xs:w-12"
+                    [alt]="item.image" />
+                <div class="!text-center lg:mt-2 mt-4 ">
+                    <div class="px-2 !text-center font-bold 5xs:text-sm  4xs:text-sm 3xs:text-lg 2xs:text-lg xs:text-2xl sm:text-xl md:text-sm xl:text-base 3xl:text-xl 4xl:text-xl  6xl:text-2xl 7xl:text-2xl 8xl:text-2xl xl:line-clamp-2 line-clamp-0 xl:min-h-[70px] lg:min-h-[40px] md:min-h-[40px]" title="{{ item.title }}">{{ item.title }}</div>
+                    <div class="px-1 !text-center text-[#868484] font-normal 5xs:text-xs  4xs:text-xs 3xs:text-base 2xs:text-base  xs:text-lg  sm:text-base md:text-xs xl:text-sm 3xl:text-base 4xl:text-lg  7xl:text-lg group-hover:text-black xl:line-clamp-4 line-clamp-0 xl:min-h-[70px] min-h-[20px]">{{ item.subTitle }}</div>
+                </div> 
+            </div>
+        </div>
+        }
+    </div>
+    <div class="!m-auto text-center !mt-0">
+        <button (click)="navToBenefitsHive()"
+            class="bg-[#231F20]  rounded-[4px] text-white px-12 py-4 w-fit hover:bg-[#FAAD17] hover:text-black font-medium">
+            <div class="5xs:text-xs 4xs:text-xs 3xs:text-xs 2xs:text-sm xs:text-sm md:text-sm  sm:text-sm lg:text-sm xl:text-base 2xl:text-base 3xl:text-base 4xl:text-base 5xl:text-lg 6xl:text-lg 7xl:text-2xl 8xl:text-2xl">
+                See All Benefits of HIVE
+            </div>
+        </button>
+    </div>
+</section>

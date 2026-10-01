@@ -1,0 +1,51 @@
+{
+  "contactSupport": {
+    "title": "تواصل ودعم",
+    "email": "البريد الإلكتروني"
+  },
+  "footer": {
+    "brand": "هايف",
+    "tagline": "صنع في السعودية",
+    "product": "المنتج",
+    "company": "الشركة",
+    "resources": "الموارد",
+    "features": "الميزات",
+    "pricing": "التسعير",
+    "documentation": "التوثيق",
+    "releases": "الإصدارات",
+    "about": "حول",
+    "blog": "مدونة",
+    "community": "المجتمع",
+    "helpcenter": "مركز المساعدة",
+    "partners": "الشركاء"
+  },
+  "navigation": {
+    "home": "الرئيسية",
+    "about": "عن الشركة",
+    "services": "الخدمات",
+    "contact": "تواصل",
+    "deepTechnical": "التقنية العميقة"
+  },
+  "aboutUs": {
+    "hero": {
+      "title": "قصة Hive",
+      "description": "Body text for your whole article or post. We'll put in some lorem ipsum to show how a filled-out page might look:"
+    },
+    "securityFeatures": {
+      "title": "ميزات الأمان",
+      "description": "Body text for your whole article or post. We'll put in some lorem ipsum to show how a filled-out page might look:"
+    },
+    "securedWork": {
+      "title": "العمل المحمي",
+      "description": "Body text for your whole article or post. We'll put in some lorem ipsum to show how a filled-out page might look:"
+    },
+    "useCases": {
+      "title": "أمثلة الاستخدام",
+      "description": "Body text for your whole article or post. We'll put in some lorem ipsum to show how a filled-out page might look:"
+    },
+    "contactSupport": {
+      "title": "تواصل مع الدعم",
+      "description": "Body text for your whole article or post. We'll put in some lorem ipsum to show how a filled-out page might look:"
+    }
+  }
+} 

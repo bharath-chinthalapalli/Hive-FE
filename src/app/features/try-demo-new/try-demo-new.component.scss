@@ -1,0 +1,29 @@
+/* Completely hide badge (still works) */
+::ng-deep .grecaptcha-badge {
+  visibility: hidden !important;
+}
+
+/* Optionally, reposition instead of hiding */
+.grecaptcha-badge {
+  bottom: 90px !important; /* move up */
+  /* or: left: 5px !important; right: auto; bottom: auto; top: 5px; to move badge */
+}
+
+
+
+::ng-deep .country-select-panel .mat-select-panel {
+  max-height: 300px;
+  overflow: auto;
+  background-color: #F9FCFF;
+  color: #d7dce1;
+}
+/* Add this in global styles or component styles */
+.mat-select-panel input {
+  width: 100%;
+  padding: 4px;
+  margin-bottom: 8px;
+  box-sizing: border-box;
+}
+::ng-deep .export-spinner circle{
+    stroke: white!important;
+}

@@ -1,0 +1,83 @@
+.hex-hover-bg {
+  clip-path: polygon(
+    50% 0%,
+    93% 25%,
+    93% 75%,
+    50% 100%,
+    7% 75%,
+    7% 25%
+  );
+  overflow: hidden;
+  background-color: white;
+  z-index: 0;
+  width: 100%;
+  margin: 0;
+  transition: background-color 0.3s ease, border-left 0.3s ease;
+  border-left: none; /* Remove border on hover */
+}
+
+.group:hover .hex-hover-bg {
+    border-left: 4px solid #FAAD17;
+}
+
+.hex-hover-bg::before {
+  content: '';
+  position: absolute;
+  top: 30%;
+  left: 7%;
+  width: 4px;
+  height: 40%;
+  background-color: #FAAD17;
+  z-index: 1;
+}
+
+/* On hover: yellow background, hide orange line */
+.group:hover .hex-hover-bg {
+  background-color: #FFFFE4;
+}
+.group:hover .hex-hover-bg::before {
+  opacity: 0;
+}
+.hex-title {
+  font-size: 14px;
+  color: #231F20;
+  font-weight: 700;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+  text-align: center;
+}
+@media (min-width: 1240px) and (max-width: 1340px){
+  .hex-title {
+    font-size: 16px;
+  }
+}
+@media (min-width: 1341px) and (max-width: 1440px){
+  .hex-title {
+    font-size: 18px;
+  }
+}
+@media (min-width: 1441px) and (max-width: 1540px){
+  .hex-title {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 1542px) {
+  .hex-title {
+    font-size: 24px!important;
+  }
+}
+
+.hex-card-body {
+  padding: 1rem;
+}
+
+.hex-sub-title {
+  color: #868484;
+  padding-top: 0.25rem;
+  font-size: 0.875rem;
+  font-weight: 300;
+}
+

@@ -1,0 +1,116 @@
+<section class="flex flex-col gap-4 3xs:px-0 px-2">
+    <div class="text-center mb-4">
+        <div class="font-bold 5xs:text-xl 4xs:text-2xl 3xs:text-2xl 2xs:text-2xl xs:text-2xl sm:text-2xl lg:text-3xl xl:text-3xl 2xl:text-4xl 3xl:text-4xl 4xl:text-4xl 5xl:text-4xl 6xl:text-5xl 7xl:text-5xl 8xl:text-6xl text-[#FAAD17]">
+            Algorithm  <span class="text-[#231F20]"> Description</span>
+        </div>
+    </div>
+    <div class="text-justify 5xs:text-xs 4xs:text-xs 3xs:text-sm 2xs:text-sm xs:text-base sm:text-base md:text-lg lg:text-lg xl:text-lg 3xl:text-lg 4xl:text-2xl 5xl:text-2xl 6xl:text-2xl 7xl:text-2xl 8xl:text-3xl !font-normal text-[#868484] !leading-relaxed">
+        The proposed encryption algorithm can be visualized by a map of hexadecimal numbers arranged into
+        encryption cells. Figure 1 shows an example of such an encryption cell that makes up the HIVE encryption
+        map. As shown in the Figure 1, each cell (denoted by its cell index (1)) is of a hexagon shape contains
+        16 Encryption Point (2) along its 6 sides. Each encryption Point (2) has two values the plain text
+        value (3) and the cipher text value (4). The present encryption is hexadecimal based where encryption is
+        taking place 4-bits at a time instead of bit by bit basis.At an encryption point the encryption process takes
+        place by direct mapping of the hexadecimal number
+        represented in the plain text value (3) with the corresponding hexadecimal number represented in the
+        cipher text value (4).In actual implementation, there will be a HIVE encryption map consisting of multiple
+        encryption cells
+        like the one depicted in Figure 1. For example, figure 2 illustrates a HIVE encryption map that is
+        composed of 12 encryption cells. The map is constructed such that the cipher text values within the
+        encryption cells can either be generated randomly (confusion) or by constantly shifting these values,
+        within copies of the randomly generated cells, one step in clock-wise direction (diffusion). For example
+        the encryption cell number 12 is generated randomly and encryption cell number 1 the cipher text value
+        is the same value as encryption cell number 12 but shifted one step clock-wise. So in cell number 12 the
+        plain text value of 0x0 is encrypted by 0xA of cipher Text value, however in cell number 1 0x0 is
+        encrypted by 0x6 and so on. also Figure 2 shows the Encryption Path (4) in the map, which represents the
+        order of cells the encryption process will take place in, and in this case it is
+        1→2→7→3→4→9→8→5→6→11→10→12.
+    </div>
+    <div class="flex items-center m-auto">
+        <div>
+            <img src="algorithm_image_1.svg" alt="algorithm_image_1" class="bg-cover w-full">
+        </div>
+        <div>
+            <img src="algorithm_image_2.svg" alt="algorithm_image_2" class="bg-cover w-full">
+        </div>
+    </div>
+    <div class="5xs:text-xs 4xs:text-xs 3xs:text-sm 2xs:text-sm xs:text-base sm:text-base md:text-lg lg:text-lg xl:text-lg 3xl:text-lg 4xl:text-2xl 5xl:text-2xl 6xl:text-2xl 7xl:text-2xl 8xl:text-3xl  text-[#231F20] !leading-relaxed text-justify">
+        The HIVE encryption map has the following properties:
+    </div>
+    <div class="my-0">
+        <div class="5xs:text-xs 4xs:text-xs 3xs:text-sm 2xs:text-sm xs:text-base sm:text-base md:text-lg lg:text-lg xl:text-lg 3xl:text-lg 4xl:text-2xl 5xl:text-2xl 6xl:text-2xl 7xl:text-2xl 8xl:text-3xl  text-[#231F20] font-bold  !leading-relaxed text-justify ">
+            Scalable complexity:
+            <span class="font-normal text-[#868484]">
+                the complexity of the map can be scaled and managed easily as it's a matter of increasing the number of
+                the encryption cells. The complexity of map is measured by the possible number of path it contains which
+                can be calculated as the following example:number of possible encryption Path = 2n, 3n, 4n, where n is
+                number of encryption cells. So for example for a 2,000 cells map, the number of possible encryption path
+                will be 2<sup class="text-[7px] align-sub mr-[10px]">2,000</sup> = 1.2 x 10<sup class="text-[7px] align-sub mr-[3px]">602</sup> unique paths capable of encrypting more than 2.2 x10<sup class="text-[7px] align-sub mr-[3px]">587</sup> TB of data before
+                the path repeats itself again.
+            </span>
+        </div>
+    </div>
+    <div class="my-0">
+        <div class="5xs:text-xs 4xs:text-xs 3xs:text-sm 2xs:text-sm xs:text-base sm:text-base md:text-lg lg:text-lg xl:text-lg 3xl:text-lg 4xl:text-2xl 5xl:text-2xl 6xl:text-2xl 7xl:text-2xl 8xl:text-3xl  text-[#231F20] font-bold  !leading-relaxed text-justify">
+            Confusion and diffusion:
+            <span class="font-normal text-[#868484]">
+                by either generating the cipher Text values randomly (confusion) or by
+                rotating them the cipher text Value of the randomly generated encryption cells one step
+                clockwise (diffusion). The resulted cipher will be scrambled and looks totally random from
+                external attacker's point of view.
+            </span>
+        </div>
+    </div>
+    <div class="my-0">
+        <div class="5xs:text-xs 4xs:text-xs 3xs:text-sm 2xs:text-sm xs:text-base sm:text-base md:text-lg lg:text-lg xl:text-lg 3xl:text-lg 4xl:text-2xl 5xl:text-2xl 6xl:text-2xl 7xl:text-2xl 8xl:text-3xl  text-[#231F20] font-bold !leading-relaxed text-justify ">
+            Encryption path generation function:
+            <span class="font-normal text-[#868484]">
+                the encryption key is used as a seed for generating the required path for encrypting the plain text.This function is unique and its consistence is such that when the sender and the receiver use two copies of the same map and the symmetric encryption keys the generated path will be the same at both ends.
+            </span>
+        </div>
+    </div>
+    <div class="5xs:text-xs 4xs:text-xs 3xs:text-sm 2xs:text-sm xs:text-base sm:text-base md:text-lg lg:text-lg xl:text-lg 3xl:text-lg 4xl:text-2xl 5xl:text-2xl 6xl:text-2xl 7xl:text-2xl 8xl:text-3xl  text-[#868484] !leading-relaxed text-justify">
+        The encryption path is generated from the cells numbers according to a function that associated with the HIVE map. This function is responsible for generating the encryption Path using the encryption key that will be shared between the sender and receiver. To achieve this, the encryption key itself is a subset of the encryption path and represents the first part of the path.
+    </div>
+    <div class="5xs:text-xs 4xs:text-xs 3xs:text-sm 2xs:text-sm xs:text-base sm:text-base md:text-lg lg:text-lg xl:text-lg 3xl:text-lg 4xl:text-2xl 5xl:text-2xl 6xl:text-2xl 7xl:text-2xl 8xl:text-3xl  text-[#868484] !leading-relaxed text-justify my-4">
+        A. HIVE encryption protocol would operate as the following steps:
+    </div>
+    <ol class="list-decimal pl-4 my-1 flex flex-col gap-4">
+
+        <li class="font-normal text-[#868484] 5xs:text-xs 4xs:text-xs 3xs:text-sm 2xs:text-sm xs:text-base sm:text-base md:text-lg lg:text-lg xl:text-lg 3xl:text-lg 4xl:text-2xl 5xl:text-2xl 6xl:text-2xl 7xl:text-2xl 8xl:text-3xl  !leading-relaxed text-justify">
+            The process starts by the sender and the receiver getting copy of a common HIVE map they will use for the encryption / decryption of data between them. This common HIVE map will be standard and would be found on the World Wide Web and come with different sizes and encryption path function</li>
+
+        <li class="font-normal text-[#868484] 5xs:text-xs 4xs:text-xs 3xs:text-sm 2xs:text-sm xs:text-base sm:text-base md:text-lg lg:text-lg xl:text-lg 3xl:text-lg 4xl:text-2xl 5xl:text-2xl 6xl:text-2xl 7xl:text-2xl 8xl:text-3xl  !leading-relaxed ">
+            The sender then, for the first time during the setup of the encryption, will tune the map using set of define parameters or initiation vector in order to customize it for the communication with the receiver</li>
+
+        <li class="font-normal text-[#868484] 5xs:text-xs 4xs:text-xs 3xs:text-sm 2xs:text-sm xs:text-base sm:text-base md:text-lg lg:text-lg xl:text-lg 3xl:text-lg 4xl:text-2xl 5xl:text-2xl 6xl:text-2xl 7xl:text-2xl 8xl:text-3xl  !leading-relaxed text-left">
+            The sender then will send the tuning parameters or initiation vector to the receiver.
+        </li>
+        <li class="font-normal text-[#868484] 5xs:text-xs 4xs:text-xs 3xs:text-sm 2xs:text-sm xs:text-base sm:text-base md:text-lg lg:text-lg xl:text-lg 3xl:text-lg 4xl:text-2xl 5xl:text-2xl 6xl:text-2xl 7xl:text-2xl 8xl:text-3xl  !leading-relaxed text-justify">
+            The receiver will in turn tune the map to be identical to the sender's map
+        </li>
+        <li class="font-normal text-[#868484] 5xs:text-xs 4xs:text-xs 3xs:text-sm 2xs:text-sm xs:text-base sm:text-base md:text-lg lg:text-lg xl:text-lg 3xl:text-lg 4xl:text-2xl 5xl:text-2xl 6xl:text-2xl 7xl:text-2xl 8xl:text-3xl  !leading-relaxed text-justify">
+            The sender then generates from the map an encryption key that will be used symmetrically with the receiver for the encryption process. The size of the key can vary depending on the agreed parameters between the sender and receiver.
+        </li>
+        <li class="font-normal text-[#868484] 5xs:text-xs 4xs:text-xs 3xs:text-sm 2xs:text-sm xs:text-base sm:text-base md:text-lg lg:text-lg xl:text-lg 3xl:text-lg 4xl:text-2xl 5xl:text-2xl 6xl:text-2xl 7xl:text-2xl 8xl:text-3xl  !leading-relaxed text-justify">
+            After generating the encryption key the sender will then send it to the receiver over a secure channel using any of the known standard methods for exchanging secret symmetric keys.
+        </li>
+        <li class="font-normal text-[#868484] 5xs:text-xs 4xs:text-xs 3xs:text-sm 2xs:text-sm xs:text-base sm:text-base md:text-lg lg:text-lg xl:text-lg 3xl:text-lg 4xl:text-2xl 5xl:text-2xl 6xl:text-2xl 7xl:text-2xl 8xl:text-3xl  !leading-relaxed text-justify"> 
+            The sender then will use the encryption key along with the map to encrypt the plain text he/she would like to send. The map will work on the same dynamic explained above by taking the encryption key as a seed to generate the required length of the encryption path in accordance with the map's path function as explained using Figure 3.
+        </li>
+
+        <li class="font-normal text-[#868484] 5xs:text-xs 4xs:text-xs 3xs:text-sm 2xs:text-sm xs:text-base sm:text-base md:text-lg lg:text-lg xl:text-lg 3xl:text-lg 4xl:text-2xl 5xl:text-2xl 6xl:text-2xl 7xl:text-2xl 8xl:text-3xl  !leading-relaxed text-justify">
+            The encryption process takes place and the cipher text is streamed down the (unsecure) communication channel between the sender and the received. Given the dynamic of the HIVE encryption, there is no limitation in the length of the encryption process that will go on as long as it's needed.
+        </li>
+
+        <li class="font-normal text-[#868484] 5xs:text-xs 4xs:text-xs 3xs:text-sm 2xs:text-sm xs:text-base sm:text-base md:text-lg lg:text-lg xl:text-lg 3xl:text-lg 4xl:text-2xl 5xl:text-2xl 6xl:text-2xl 7xl:text-2xl 8xl:text-3xl  !leading-relaxed text-justify">
+            The receiver will then uses the HIVE map and the encryption key to decrypt the cipher text into the
+            original plain text that was sent.
+        </li>
+    </ol>
+    <div class="5xs:text-xs 4xs:text-xs 3xs:text-sm 2xs:text-sm xs:text-base sm:text-base md:text-lg lg:text-lg xl:text-lg 3xl:text-lg 4xl:text-2xl 5xl:text-2xl 6xl:text-2xl 7xl:text-2xl 8xl:text-3xl  text-[#868484] !leading-relaxed text-justify my-1">The above steps can be illustrated by the following
+        Figure 3.</div>
+    <div>
+        <img src="hive_encryption_protocol.svg" alt="hive_encryption_protocol" class="bg-cover w-3/4 m-auto">
+    </div>
+</section>

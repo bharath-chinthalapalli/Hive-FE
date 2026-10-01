@@ -1,0 +1,206 @@
+<main class="">
+    <div class="w-full bg-[#231F20] text-white  z-10 3xs:pl-16 pl-8  py-4">
+        <!-- <a class="tracking-wider" routerLink="/">Home / <span class="text-gray-400">Services</span></a> -->
+        <nav class="tracking-wider">
+            <a routerLink="/" class="hover:underline underline-offset-4 cursor-pointer">Home</a>
+            /
+            <span class="text-[#A7A5A6]">Try Demo</span>
+        </nav>
+    </div>
+    <div class="w-full sm:flex block items-start gap-6 3xs:px-16 px-6">
+        <div class="sm:w-2/5 w-full sm:py-14 py-4">
+            <div
+                class="font-bold 5xs:text-xl 4xs:text-2xl 3xs:text-2xl 2xs:text-2xl xs:text-2xl sm:text-2xl lg:text-3xl xl:text-3xl 2xl:text-4xl 3xl:text-4xl 4xl:text-4xl 5xl:text-4xl 6xl:text-5xl 7xl:text-5xl 8xl:text-6xl text-[#FAAD17] mb-4">
+                Try a
+                <span class="text-[#231F20]">
+                    Demo
+                </span>
+            </div>
+            <div
+                class="5xs:text-xs 4xs:text-xs 3xs:text-xs 2xs:text-xs xs:text-sm sm:text-sm md:text-base lg:text-lg xl:text-lg 2xl:text-xl 3xl:text-xl 4xl:text-2xl 5xl:text-2xl 6xl:text-2xl 7xl:text-2xl 8xl:text-3xl font-normal text-[#231F20]">
+                Discover how HIVE can work for you. Schedule a personalized demo and see our solutions in action
+                tailored to your needs and use cases.</div>
+            <hr class="my-2 bg-[#231F20]">
+            <div class="md:block flex flex-wrap gap-4 py-2">
+                <div class="4xs:flex block  items-start gap-4 flex-row mt-2">
+                    <a>
+                        <img src="location_box.svg" alt="location_box" class="">
+                    </a>
+                    <div class="flex flex-col gap-1 4xs:mt-0 mt-2">
+                        <div
+                            class="text-[#231F20] 5xs:text-xs 4xs:text-xs 3xs:text-xs 2xs:text-xs xs:text-sm sm:text-sm md:text-base lg:text-lg xl:text-lg 2xl:text-xl 3xl:text-xl 4xl:text-2xl 5xl:text-2xl 6xl:text-2xl 7xl:text-2xl 8xl:text-3xl font-normal">
+                            Address</div>
+                        <a
+                            class="text-sm font-normal text-gray-400 text-nowrap">Riyadh, Saudi Arabia</a>
+                    </div>
+                </div>
+                <div class="4xs:flex block  items-start gap-4 flex-row mt-2">
+                    <a href="tel:+966118274157" title="Call via your phone app" onclick="handlePhoneClick(event)">
+                        <img src="phone_box.svg" alt="phone_box" class="">
+                    </a>
+                    <div class="flex flex-col gap-1 4xs:mt-0 mt-2">
+                        <p
+                            class="text-[#231F20] 5xs:text-xs 4xs:text-xs 3xs:text-xs 2xs:text-xs xs:text-sm sm:text-sm md:text-base lg:text-lg xl:text-lg 2xl:text-xl 3xl:text-xl 4xl:text-2xl 5xl:text-2xl 6xl:text-2xl 7xl:text-2xl 8xl:text-3xl font-normal">
+                            Phone Number</p>
+                        <a href="tel:+966118274157" title="Call via your phone app"
+                            class="text-sm font-normal text-gray-400 text-nowrap">+966 11
+                            827 4157</a>
+                    </div>
+                </div>
+                <div class="4xs:flex block  items-start gap-4 flex-row mt-2">
+                    <a href="mailto:sales@dcf.sa" target="_blank">
+                        <img src="mail_box.svg" alt="mail_box" class="">
+                    </a>
+                    <div class="flex flex-col gap-1 4xs:mt-0 mt-2">
+                        <div
+                            class="text-[#231F20] 5xs:text-xs 4xs:text-xs 3xs:text-xs 2xs:text-xs xs:text-sm sm:text-sm md:text-base lg:text-lg xl:text-lg 2xl:text-xl 3xl:text-xl 4xl:text-2xl 5xl:text-2xl 6xl:text-2xl 7xl:text-2xl 8xl:text-3xl font-normal">
+                            Email Address</div>
+
+                        <a href="mailto:contactus@hiveencrypt.com" target="_blank"
+                            class="text-sm font-normal text-[#828284]">contactus&#64;hiveencrypt.com</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="sm:w-3/5 w-full sm:py-14 py-4">
+            <form [formGroup]="tryDemoForm" (ngSubmit)="submitTryDemoForm()" class="flex flex-col gap-4"
+                autocomplete="off">
+                <!-- Name -->
+                <div class="flex flex-col gap-2 w-full">
+                    <label class="text-lg text-[#231F20]">Name <span class="text-red-500 text-base">*</span></label>
+                    <mat-form-field class=" text-sm" appearance="outline" subscriptSizing="dynamic">
+                        <input formControlName="name" type="text" matInput autocomplete="off"
+                            class="text-sm placeholder:text-sm placeholder:text-gray-400" placeholder="Enter Your Name">
+                    </mat-form-field>
+                    <p class="text-sm font-normal text-red-500"
+                        *ngIf="tryDemoForm.get('name')?.touched && tryDemoForm.get('name')?.hasError('required')">Name
+                        is required</p>
+                    <p class="text-sm font-normal text-red-500"
+                        *ngIf="tryDemoForm.get('name')?.touched && tryDemoForm.get('name')?.hasError('minlength')">
+                        Name must be at least 4 characters</p>
+                    <p class="text-sm font-normal text-red-500"
+                        *ngIf="tryDemoForm.get('name')?.touched && tryDemoForm.get('name')?.hasError('maxlength')">
+                        Name must not exceed 50 characters</p>
+                    <p class="text-sm font-normal text-red-500"
+                        *ngIf="tryDemoForm.get('name')?.touched && tryDemoForm.get('name')?.hasError('pattern')">
+                        Name can only contain letters (Not alllowed numbers/symbols and No spaces at start/end)</p>
+                </div>
+                <!-- Email -->
+                <div class="flex flex-col gap-2">
+                    <label class="text-lg text-[#231F20]">Email <span class="text-red-500 text-base">*</span></label>
+                    <mat-form-field class="text-sm" appearance="outline" subscriptSizing="dynamic">
+                        <input formControlName="email" type="text" matInput
+                            class="text-sm placeholder:text-sm placeholder:text-gray-400"
+                            placeholder="Enter Your Email">
+                    </mat-form-field>
+                    <p class="text-sm font-normal text-red-500"
+                        *ngIf="tryDemoForm.get('email')?.touched && tryDemoForm.get('email')?.hasError('required')">
+                        Email is required</p>
+                    <p class="text-sm font-normal text-red-500"
+                        *ngIf="tryDemoForm.get('email')?.touched && tryDemoForm.get('email')?.hasError('email')">Invalid
+                        Email Format</p>
+
+                    <p class="text-sm font-normal text-red-500"
+                        *ngIf="tryDemoForm.get('email')?.touched && tryDemoForm.get('email')?.hasError('pattern')">
+                        Invalid Email Format ( Ex:mail&#64;domain.com')</p>
+                </div>
+                <!-- phoneNumber -->
+                <label class="text-lg text-[#231F20]">Phone Number <span class="text-red-500 text-base">*</span></label>
+                <div class="flex flex-col sm:flex-row gap-2 items-center w-full">
+                    <mat-form-field appearance="outline" class="w-full sm:w-auto " subscriptSizing="dynamic">
+                        <mat-select formControlName="dialCode" panelClass="country-select-panel"
+                            class="!text-gray-500 ">
+                            <mat-select-trigger>
+                                {{ getSelectedCountry()?.code }} ({{ getSelectedCountry()?.dialCode }})
+                            </mat-select-trigger>
+                            <mat-option *ngFor="let country of filteredCountries()" [value]="country.dialCode" class="">
+                                {{ country.name }} ({{ country.dialCode }})
+                            </mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                    <div class="w-full">
+                        <!-- <input type="tel" formControlName="phoneNumber" placeholder="Phone number"
+                            class="border-[1px] p-2 w-full border-[#D2D1D1] rounded-[5px] bg-[#F9FCFF] placeholder:text-sm " /> -->
+                        <mat-form-field class="text-sm w-full" appearance="outline" subscriptSizing="dynamic">
+                            <input formControlName="phoneNumber" type="tel" matInput  (keypress)="allowOnlyNumbers($event)"
+                                class="text-sm placeholder:text-sm placeholder:text-gray-400"
+                                placeholder="Enter Your Phone Number"
+                                >
+                        </mat-form-field>
+                    </div>
+                </div>
+                <div class="-mt-1">
+                    <p class="text-sm font-normal text-red-500"
+                        *ngIf="tryDemoForm.get('phoneNumber')?.touched && tryDemoForm.get('phoneNumber')?.hasError('required')">
+                        Phone number is required</p>
+                    <p class="text-sm font-normal text-red-500"
+                        *ngIf="tryDemoForm.get('phoneNumber')?.touched && tryDemoForm.get('phoneNumber')?.hasError('minlength')">
+                        Minimum 4 digits required</p>
+                    <p class="text-sm font-normal text-red-500"
+                        *ngIf="tryDemoForm.get('phoneNumber')?.touched && tryDemoForm.get('phoneNumber')?.hasError('pattern')">
+                        Invalid Phone Number Formate</p>
+                    <p class="text-sm font-normal text-red-500"
+                        *ngIf="tryDemoForm.get('phoneNumber')?.touched && tryDemoForm.get('phoneNumber')?.hasError('maxlength')">
+                        Maximum 17 digits required</p>
+                </div>
+                <!-- Message -->
+                <div class="flex flex-col gap-2">
+                    <label class="text-lg text-[#231F20]">Your Interest <span
+                            class="text-red-500 text-base">*</span></label>
+                    <mat-form-field class="text-sm w-full" appearance="outline" subscriptSizing="dynamic">
+                        <textarea formControlName="message" matInput
+                            class="text-sm placeholder:text-sm placeholder:text-gray-400"
+                            placeholder="How can we help you" rows="3"></textarea>
+                    </mat-form-field>
+
+                    <!-- <textarea formControlName="message"
+                        class="border-[1px] p-2 w-full border-[#D2D1D1] rounded-[5px] bg-[#F9FCFF] placeholder:text-sm"
+                        placeholder="How can we help you?"></textarea> -->
+                    <p class="text-sm font-normal text-red-500"
+                        *ngIf="tryDemoForm.get('message')?.touched && tryDemoForm.get('message')?.hasError('required')">
+                        Message is required</p>
+                    <p class="text-sm font-normal text-red-500"
+                        *ngIf="tryDemoForm.get('message')?.touched && tryDemoForm.get('message')?.hasError('maxlength')">
+                        Minimum 500 characters required</p>
+                    <p *ngIf="tryDemoForm.get('message')?.hasError('pattern') && tryDemoForm.get('message')?.touched"
+                        class="text-red-500 text-sm">
+                        Space is not allowed at the beginning/end of the message
+                    </p>
+
+                </div>
+                <!-- Recaptcha -->
+                <!-- <div>
+                    <re-captcha formControlName="captcha" siteKey="6LdeiXIrAAAAAF_sbmbD8_cyZOB7UsIuANT9L2Ym"
+                        (resolved)="onCaptchaResolved($event)">
+                    </re-captcha>
+
+                    <p *ngIf="tryDemoForm.get('captcha')?.invalid && tryDemoForm.get('captcha')?.touched"
+                        class="text-red-500">
+                        Please complete the captcha
+                    </p>
+                </div> -->
+                <small class="mt-2 text-xs text-gray-500">
+                    This site is protected by reCAPTCHA and the Google
+                    <a href="https://policies.google.com/privacy" target="_blank" class="underline">Privacy Policy</a>
+                    and
+                    <a href="https://policies.google.com/terms" target="_blank" class="underline">Terms of Service</a>
+                    apply.
+                </small>
+                <!-- Submit Button -->
+                <button type="submit" [disabled]="tryDemoForm.invalid || isLoading()"
+                    [ngClass]="{'cursor-not-allowed': tryDemoForm.invalid || isLoading(), 'cursor-pointer': tryDemoForm.valid  && !isLoading()}"
+                    class="mt-4 flex items-center gap-4 border text-sm text-white bg-black 8xl:px-14 px-16 8xl:py-6 py-4 !w-fit border-black rounded-[4px] font-bold sm:w-auto hover:bg-black hover:text-white transition-colors">
+                    <ng-container *ngIf="isLoading()">
+                        <mat-spinner diameter="18" strokeWidth="2" class="!text-white export-spinner"></mat-spinner>
+                    </ng-container>
+                    <span
+                        class="text-center 5xs:text-xs 4xs:text-xs 3xs:text-xs 2xs:text-sm xs:text-sm md:text-sm  sm:text-sm lg:text-sm xl:text-base 2xl:text-base 3xl:text-base 4xl:text-base 5xl:text-lg 6xl:text-lg 7xl:text-2xl 8xl:text-2xl">
+                        Request Demo
+                    </span>
+                </button>
+            </form>
+        </div>
+
+    </div>
+</main>

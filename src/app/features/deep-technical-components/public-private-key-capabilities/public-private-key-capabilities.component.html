@@ -1,0 +1,59 @@
+<section>
+
+    <div class="text-center mb-4">
+        <div
+            class="font-bold 5xs:text-xl 4xs:text-2xl 3xs:text-2xl 2xs:text-2xl xs:text-2xl sm:text-2xl lg:text-3xl xl:text-3xl 2xl:text-4xl 3xl:text-4xl 4xl:text-4xl 5xl:text-4xl 6xl:text-5xl 7xl:text-5xl 8xl:text-6xl text-[#FAAD17]  ">
+            Public-Private <span class="text-[#231F20]">
+                Key Capabilities
+            </span>
+        </div>
+    </div>
+    <div>
+        <div
+            class="5xs:text-xs 4xs:text-xs 3xs:text-sm 2xs:text-sm xs:text-base sm:text-base md:text-lg lg:text-lg xl:text-lg 3xl:text-lg 4xl:text-2xl 5xl:text-2xl 6xl:text-2xl 7xl:text-2xl 8xl:text-3xl text-[#868484] !leading-relaxed">
+            HIVE encryption's support for asymmetric encryption is a groundbreaking aspect, as it achieves
+            this without relying on the complex mathematical problems that underpin traditional public-key cryptography
+            like RSA or ECC. Instead, it leverages the inherent spatial and structural properties of its
+            unique HIVE map.
+        </div>
+        <div
+            class="5xs:text-xs 4xs:text-xs 3xs:text-sm 2xs:text-sm xs:text-base sm:text-base md:text-lg lg:text-lg xl:text-lg 3xl:text-lg 4xl:text-2xl 5xl:text-2xl 6xl:text-2xl 7xl:text-2xl 8xl:text-3xl text-[#868484] !leading-relaxed">
+            Here's how HIVE supports asymmetric encryption without mathematical relationships between
+            public/private
+            keys:
+        </div>
+        <ol class="list-decimal pl-4 my-2 flex flex-col gap-4">
+            @for (listItemData of list(); track listItemData) {
+            <li
+                class="font-bold text-[#FAAD17]  5xs:text-xs 4xs:text-xs 3xs:text-sm 2xs:text-sm xs:text-base sm:text-base md:text-lg lg:text-lg xl:text-lg 3xl:text-lg 4xl:text-2xl 5xl:text-2xl 6xl:text-2xl 7xl:text-2xl 8xl:text-3xl !leading-relaxed">
+                {{listItemData.listItem}}
+                @for (subListItemData of listItemData.subListItem; track subListItemData) {
+                <ol class="list-disc pl-4 my-2 flex flex-col gap-4 ">
+                    <li class="font-normal text-[#868484] 5xs:text-xs 4xs:text-xs 3xs:text-sm 2xs:text-sm xs:text-base sm:text-base md:text-lg lg:text-lg xl:text-lg 3xl:text-lg 4xl:text-2xl 5xl:text-2xl 6xl:text-2xl 7xl:text-2xl 8xl:text-3xl !leading-relaxed"
+                        [innerHTML]="subListItemData?.subItem"></li>
+                </ol>
+                }
+            </li>
+            }
+        </ol>
+        <div
+            class="5xs:text-xs 4xs:text-xs 3xs:text-sm 2xs:text-sm xs:text-base sm:text-base md:text-lg lg:text-lg xl:text-lg 3xl:text-lg 4xl:text-2xl 5xl:text-2xl 6xl:text-2xl 7xl:text-2xl 8xl:text-3xl text-[#868484] !leading-relaxed">
+            In essence, HIVE's asymmetric encryption leverages the massive complexity and random nature of
+            its multi-dimensional map. The public and private "keys" are more like complementary pieces of a
+            complex puzzle built from random values within the map's structure, rather than numbers linked
+            by a solvable equation. This design is what makes it resistant to mathematical attacks,
+            including those posed by quantum computers.
+        </div>
+    </div>
+
+    <div class="!m-auto text-center !my-8">
+        <button (click)="navToContact()"
+            class="bg-[#231F20] rounded-[4px] text-white 8xl:px-14 px-6 8xl:py-6 py-4 w-fit hover:bg-[#FAAD17] hover:text-[[#231F20]] font-medium">
+            <div
+                class="5xs:text-xs 4xs:text-xs 3xs:text-xs 2xs:text-sm xs:text-sm md:text-sm  sm:text-sm lg:text-smsm xl:text-base 2xl:text-base 3xl:text-base 4xl:text-base 5xl:text-lg 6xl:text-lg 7xl:text-2xl 8xl:text-2xl">
+                Contact Us for API/SDK Access
+            </div>
+        </button>
+    </div>
+
+</section>

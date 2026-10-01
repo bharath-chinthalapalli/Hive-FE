@@ -1,0 +1,37 @@
+<section class="3xs:px-[48px] px-10 flex flex-col gap-4 py-10">
+    <div class="m-auto text-center flex flex-col gap-2">
+        <div class=" font-bold 5xs:text-xl 4xs:text-2xl 3xs:text-2xl 2xs:text-2xl xs:text-2xl sm:text-2xl lg:text-3xl xl:text-3xl 2xl:text-4xl 3xl:text-4xl 4xl:text-4xl 5xl:text-4xl 6xl:text-5xl 7xl:text-5xl 8xl:text-6xl text-[#FAAD17] ">Key Facts & Numbers:
+            <span class="text-[#231F20]">
+                Fast, Secure, Future-Ready Encryption
+            </span>
+        </div>
+        <div class="px-4  5xs:text-xs 4xs:text-xs 3xs:text-xs 2xs:text-xs xs:text-sm sm:text-sm md:text-base lg:text-base xl:text-base 2xl:text-lg 3xl:text-lg 4xl:text-xl 5xl:text-xl 6xl:text-2xl 7xl:text-2xl 8xl:text-3xl text-[#231F20] font-normal ">
+           It supports both symmetric and asymmetric keys, which makes it highly versatile and suitable for a wide range of applications and large user bases
+        </div>
+    </div>
+    <div class="grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-2 xs:grid-cols-2 2xs:grid-cols-1 md:gap-2 gap-6">
+        @for (item of allInductriesListNew(); track item) {
+        <div class="group cursor-auto transition-all duration-300 relative mt-0 md:mt-4 7xl:w-[500px] 7xl:h-[460px]  6xl:w-[420] 6xl:h-[380px] 4xl:w-[380px] 4xl:h-[360px] 3xl:w-[340px] 3xl:h-[345px] 2xl:w-[320px] 2xl:h-[320px] xl:w-[300px] xl:h-[300px]  lg:w-88 lg:h-88  sm:w-72 sm:h-72 xs:w-64 xs:h-64 2xs:w-64 2xs:h-64  3xs:w-64 3xs:h-64  4xs:w-64 4xs:h-64  5xs:w-60 5xs:h-60 flex flex-col justify-center mx-auto ">
+            <div class="hex-hover-bg group-hover:bg-[#FFFFE4] transition-all duration-300 absolute inset-0 z-0"></div>
+
+            <div class="relative z-10 flex flex-col justify-center gap-2 w-full p-8 items-center text-center">
+                <img src="dot.svg" class="group-hover:hidden transition-all duration-300 8xl:w-1/4 7xl:w-2/12 6xl:w-16 5xl:w-16 4xl:w-14 3xl:w-12 2xl:w-11 xl:w-12 lg:w-12" alt="dot" />
+                <img src="dot_white.svg" class="hidden group-hover:block transition-all duration-300 8xl:w-1/4 7xl:w-2/12 6xl:w-16 5xl:w-16 4xl:w-14 3xl:w-12 2xl:w-11 xl:w-12 lg:w-12 md:w-12 sm:w-14 xs:w-16 2xs:w-20 3xs:w-20 4xs:w-18 5xs:w-12" alt="dot_white" />
+                <div class="hex-card-body w-full">
+                    <div class="text-xl 6xl:text-2xl 7xl:text-3xl 8xl:text-3xl font-bold text-[#231F20] mb-2 sm:line-clamp-2 line-clamp-0 xl:min-h-[50px] lg:min-h-[40px] md:min-h-[40px]" title="{{ item.title }}">{{ item.title }}
+                    </div>
+                    <div class="text-base 6xl:text-lg 7xl:text-xl 8xl:text-2xl text-[#868484] xl:line-clamp-2 line-clamp-0 xl:min-h-[50px] lg:min-h-[40px] md:min-h-[40px]">{{ item.subTitle }}</div>
+                </div>
+            </div>
+        </div>
+        }
+    </div>
+    <div class="!m-auto text-center !mt-8">
+        <button (click)="navToDiveDeeper()"
+            class="bg-[#231F20] rounded-[4px] text-white px-12 py-4 w-fit hover:bg-[#FAAD17] hover:text-black font-medium">
+            <div class="5xs:text-xs 4xs:text-xs 3xs:text-xs 2xs:text-sm xs:text-sm md:text-sm  sm:text-sm lg:text-sm xl:text-base 2xl:text-base 3xl:text-base 4xl:text-base 5xl:text-lg 6xl:text-lg 7xl:text-2xl 8xl:text-2xl">
+                Dive Deeper into the Technology
+            </div>
+        </button>
+    </div>
+</section>

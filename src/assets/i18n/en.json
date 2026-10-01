@@ -1,0 +1,69 @@
+{
+  "landingPage": {
+      "hero": {
+          "subtitle": "The Waggle dance? Just like bees communicate securely via movement patterns our unique encryption algorithm encrypts and decrypts instructions securely. We provide a new post-quantum computing and non-mathematical based symmetric and asymmetric encryption technology. It helps to create a spatial relationship between input and encrypted data.\n\nHIVE presents you a new symmetric encryption model to encrypt and decrypt your information in a more efficient manner. Our model is beneficial due to the principle of making the encryption and decryption operations along same encryption path.\n\nWe know security is not just a feature. It's a foundation. We rise up to protect you from data breaches, espionage, and privacy violations with cutting-edge HIVE encryption solutions on the principle of 'Trust through technology'. Our encryption stack rises above the evolving threats with the team of world-class cryptographers, engineers and security experts."
+      },
+      "database": {
+          "knowHiveTitle": "Know HIVE",
+          "knowHiveContent": "<p>We got your covered: Secure your resources with the advanced encryption and decryption methods!</p><p>HIVE protects and manages your data through encryption, key management, authentication  and access management. We are here to accelerate your digital transformation thereby reducing the risks and complexity that arises. HIVE is designed to fortify your digital defences with a proven method of making successful data encryption and decryption standards.</p><p>With an intention of eliminating any mathematical relationship between the path and encryption values in the cells, we eliminate issues inherited from the classic encryption methods like AES. HIVE proposes a brute-force approach to leverage faster results. Our innovation takes place on the unicode characters hexadecimal values with 4-bits at a time instead of taking 1-bit at a time - To foster speed and efficiency.</p><p>Our methodology will overcome the shortcomings of current encryption methods by using the 2D/3D and 4D numerical map as an encryption function. We make the encryption path as a key-stream generated from a symmetric secrete encryption key between the sender and receiver.</p><h3>For your business and data:</h3><ul><li>Easily scalable complexity</li><li>Better confusion and diffusion values</li><li>Consistent function from encryption path</li><li>Unique encryption sessions</li></ul><h3>Our story:</h3><p>Organized, Adaptive, Impenetrable.</p><p>The HIVE: Nature's blueprint for encryption - BEEHIVE!</p><p>HIVE serves aș a guardian behind every secure connection and we come up with a conceptual framework of developing a robust encryption system, just like a beehive. We lay the foundation with precise architecture and protocol as a structure, and embed the key management and access control as roles. Our intense system acts as a defence mechanism against intrusion with distributed cooperation.</p><h3>Our fresh look:</h3><p>HIVE stands out from other conventional encryption standards and algorithms by showcasing a cipher text uniqueness and Fourier transform analysis. HIVE encryption derives value that are proven to be better than the traditional AES standards.</p><ul><li>Easy to use</li><li>Strong encryption</li><li>Secure access</li><li>Multi-device support</li><li>Groups and key management</li><li>Trusted collaboration</li><li>Secured messenger</li></ul><p>HIVE infrastructure holds the best global security standards that will protect and helps you to identity, assess and monitor the risks across clouds, third-party provider and organizational sites. We are FAST, EASY and SECURE with deep visibility into your internet-facing assets.</p><h3>Uncover risks above and beyond:</h3><p>Decrease attack vectors - Helps you to efficiently eliminate risks with continuous vulnerability detection from HIVE encryption.</p><p>Achieve compliance - You can reach your compliance goals faster by making use of the encryption and decryption strategies</p><p>Vulnerability management - Our layered access and role based permissions functions in a more intelligent and self-defending manner.</p><p>Collaborated support - You can manage users and groups within your business with a group key management for enhanced security.</p><h3>Get started with HIVE</h3><p>Try a demo</p><p>Change the paradigm of how and where your organizations can leverage data to unlock values!</p><p>Are you skilled in managing your business risks?</p><p>Digital threats are increasing in magnitude and severity and hence HIVE comes into picture by proposing one of the best measures you can take. Take a demo from us to witness on protecting your data from the event of breach.</p><h4>Proceed as follows:</h4><ul><li>User needs to avail the one time private key registration process</li><li>Symmetric encryption process will kick start</li><li>Then you will be able to do a block encryption</li><li>Map and key will be generated</li><li>User is not restricted based on the file size</li><li>Leverages you to change encryption parameter like map size, key size and encryption path length</li><li>Finally, enjoy our HES performance based on the machines you use for the demo</li></ul>"
+      }
+  },
+  "contactSupport": {
+      "title": "Contact and Support",
+      "email": "Email"
+  },
+  "footer": {
+      "brand": "Hive",
+      "tagline": "Made by Saudi",
+      "product": "Product",
+      "company": "Company",
+      "resources": "Resources",
+      "features": "Features",
+      "pricing": "Pricing",
+      "documentation": "Documentation",
+      "releases": "Releases",
+      "about": "About",
+      "blog": "Blog",
+      "community": "Community",
+      "helpcenter": "Help Center",
+      "partners": "Partners"
+  },
+  "navigation": {
+      "home": "Home",
+      "about": "About Us",
+      "services": "Services",
+      "contact": "Contact",
+      "deepTechnical": "Deep Technical"
+  },
+  "aboutUs": {
+      "hero": {
+          "title": "Hive Story",
+          "description": "Body text for your whole article or post. We'll put in some lorem ipsum to show how a filled-out page might look:"
+      },
+      "securityFeatures": {
+          "high": "High",
+          "security": "Security",
+          "best": "Best",
+          "product": "Product",
+          "price": "Price",
+          "title": "Security Features",
+          "description": "Body text for your whole article or post. We'll put in some lorem ipsum to show how a filled-out page might look:"
+      },
+      "securedWork": {
+          "title": "All your work",
+          "secured": "Secured",
+          "description": "Body text for your whole article or post. We'll put in some lorem ipsum to show how a filled-out page might look:"
+      },
+      "useCases": {
+          "title": "Use Cases",
+          "description": "Body text for your whole article or post. We'll put in some lorem ipsum to show how a filled-out page might look:"
+      },
+      "contactSupport": {
+          "title": "Contact Support",
+          "case1": "Use Case 1",
+          "case2": "Use Case 2",
+          "case3": "Use Case 3",
+          "description": "Body text for your whole article or post. We'll put in some lorem ipsum to show how a filled-out page might look:"
+      }
+  }
+}

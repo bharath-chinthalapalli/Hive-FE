@@ -1,0 +1,61 @@
+/* Default (mobile-first) */
+.benefitImage {
+  width: 100%;
+  height: auto;
+}
+
+/* Between 481px and 768px (small tablets) */
+@media (min-width: 481px) and (max-width: 768px) {
+  .benefitImage {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+/* Between 769px and 1024px (large tablets to small laptops) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .benefitImage {
+    width: 90%;
+  }
+}
+
+/* Screens wider than 1024px (desktop and above) */
+@media (min-width: 1025px)and (max-width: 1156px) {
+  .benefitImage {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1157px)and (max-width: 11420px) {
+  .benefitImage {
+    width: 90%;
+  }
+}
+
+@media (min-width: 11143px)and (max-width: 1200px) {
+  .benefitImage {
+    width: 70%;
+  }
+}
+
+@media (min-width: 1201px)and (max-width: 1380px) {
+  .benefitImage {
+    width: 80%;
+  }
+}
+
+@media (min-width: 1381px)and (max-width: 1440px) {
+  .benefitImage {
+    width: 70%;
+  }
+}
+@media (min-width: 1441px) {
+  .benefitImage {
+    width: 75%;
+  }
+}
+
+.card{
+box-shadow: 0px 11px 16px rgba(0, 0, 0, 0.06);
+
+}

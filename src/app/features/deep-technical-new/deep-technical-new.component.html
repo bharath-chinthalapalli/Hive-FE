@@ -1,0 +1,463 @@
+<app-header 
+    [title]="'Deep Technical'">
+  </app-header>
+<div class="deep-technical-container">
+  <div class="content-wrapper">
+    <div class="main-section" [attr.space]="0">
+      <div class="flex-container">
+        <div class="image-column">
+          <img
+            src="https://cdn.builder.io/api/v1/image/assets/TEMP/6b40195f3c96bd3690815559388c570f30a9a6ed?placeholderIfAbsent=true&apiKey=80db7a94ff96497195a901986eba8c45"
+            class="main-image"
+            alt="Technical illustration"
+          />
+        </div>
+        <div class="content-column">
+          <div class="info-card">
+            <div class="info-content">
+              <div class="main-heading">
+                Expert support to enhance your security and resilience!
+              </div>
+              <div class="description-wrapper">
+                <div class="description-content">
+                  <div class="description-text">
+                    <p>Our range of specialist encryption and decryption services
+                    starts by the sender and receiver getting a copy of a common
+                    Hive map. This is used for the encryption and decryption of
+                    data between them.</p>
+                    <br/>
+                    <span class="highlight-text"
+                      >Managed detection and response –</span
+                    >
+                    The sender will do the setup of encryption and will tune the
+                    map using a set of defined parameters. On the other hand,
+                    the receiver will tune according to the sender's map.
+                    <br/><br/>
+                    <span class="highlight-text"
+                      >Getting ready with the key –</span
+                    >
+                    The sender will generate an encryption key from the map,
+                    which can be used symmetrically with the receiver for the
+                    encryption process. The size of the key will vary depending
+                    on the agreed parameters between the sender and receiver.
+                    <br/><br/>
+                    <span class="highlight-text"
+                      >Resolving your security challenges –</span
+                    >
+                    The encryption process will take place and cipher text is
+                    streamed down the insecure communication channel between the
+                    sender and receiver. The receiver finally uses the Hive map
+                    and encryption key to decrypt the cipher text into the
+                    original plain text that was sent.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="features-section">
+      <div class="section-heading">Key Features</div>
+      <img src="assets/best-part.svg">
+      <!-- <div class="features-grid">
+        <div class="feature-item">
+          <div class="feature-number"><div class="number">1</div></div>
+          <div class="feature-content">
+            <div class="feature-line"></div>
+            <div class="feature-text">
+              Hive map can be configured for four or more dimensions
+            </div>
+          </div>
+        </div>
+        <div class="feature-item">
+          <div class="feature-number"><div class="number">2</div></div>
+          <div class="feature-content">
+            <div class="feature-line"></div>
+            <div class="feature-text">
+              Ideal for real-time and non-reversible map encryption
+            </div>
+          </div>
+        </div>
+        <div class="feature-item">
+          <div class="feature-number"><div class="number">3</div></div>
+          <div class="feature-content">
+            <div class="feature-line"></div>
+            <div class="feature-text">
+              Hive map takes the shape of conceptual 4D shapes
+            </div>
+          </div>
+        </div>
+        <div class="feature-item">
+          <div class="feature-number"><div class="number">4</div></div>
+          <div class="feature-content">
+            <div class="feature-line"></div>
+            <div class="feature-text">
+              New symmetric encryption model on a multi-dimensional numeric
+              space
+            </div>
+          </div>
+        </div>
+        <div class="feature-item">
+          <div class="feature-number"><div class="number">5</div></div>
+          <div class="feature-content">
+            <div class="feature-line"></div>
+            <div class="feature-text">
+              Easy to implement with the right protocol and measurements in
+              place
+            </div>
+          </div>
+        </div>
+      </div> -->
+    </div>
+    <div class="sections-nav">
+      <mat-accordion class="sections-nav">
+        <mat-expansion-panel *ngFor="let section of sections" class="custom-panel" [expanded]="true">
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              {{ section.title }}
+            </mat-panel-title>
+            <mat-panel-description>
+              
+            </mat-panel-description>
+          </mat-expansion-panel-header>
+          <article *ngIf="section.title === 'Introduction'" class="article-container">
+            <section class="article-section">
+              <p class="article-text">
+                The worldwide proliferation of large quantity of data transmitted in the
+                open information and communication technology (ICT) infrastructure,
+                especially the Internet, has thrust information security to the
+                forefront of attention from the academic researchers, industry
+                practitioners, as well as government agencies around the globe (e.g.,
+                Appari and Johnson, 2010; Halperin and Backhouse, 2008; Dlamini et al.,
+                2009). Various legislative bodies have stipulated the protection of
+                sensitive data (e.g., the HIPPA regulation for health related data, and
+                the Sarbane-Oxley legislation for financial data). Researchers have
+                developed a wide variety of technical (e.g., Ahmad et al 2012; Ford and
+                Baum 2000; Scarfone et al. 2008), behavioral (e.g., Crossler et al.,
+                2013; Mai et al., 2017; Herath and Rao, 2009), and economic (e.g.,
+                Anderson and Moore, 2006; Jerman-Blazic, 2008; Mai et al., 2016) tools
+                and mechanisms to ensure information security, and business
+                organizations have embraced the challenge of information security and
+                have heavily invested to improve the security of their business
+                information.
+              </p>
+              <br/>
+            </section>
+      
+            <section class="article-section">
+              <p class="article-text">
+                Among the different information security tools and mechanisms available,
+                encryption is one of the most fundamentally established and universally
+                adopted systems used to improve information security (e.g., Rogaway and
+                Coppersmith, 1998; Wang and Yu, 2009; Bosch et al., 2015; Schneier,
+                1993; Zhang et al. 2005). The continuous advancement of information and
+                communication technology had enabled the development of more and more
+                advanced encryption systems
+              </p>
+              <br/>
+            </section>
+      
+            <section class="article-section">
+              <p class="article-text">
+                Generally speaking, encryption algorithms can be classified into two
+                types: symmetric key encryption (i.e., private key encryption) and
+                asymmetric key encryption (i.e., public key encryption). Symmetric key
+                encryption has the significant advantage of high efficiency of
+                implementation, but faces a fundamental disadvantage of key management
+                necessary for secure implementation. To address this disadvantage,
+                asymmetric key encryption has been developed. While asymmetric key
+                encryption has successfully addressed the key distribution issue of
+                symmetric key encryption, the implementation of asymmetric key
+                encryption is significantly less efficient. As a result, today's
+                encryption systems are mostly a hybrid system (Mao 2003, 2006;
+                Stallings, 2006), in which symmetric key encryption is used to encrypt
+                the communication messages, while the related private key used is
+                encrypted using asymmetric key encryption.
+              </p>
+              <br/>
+            </section>
+      
+            <section class="article-section">
+              <p class="article-text">
+                Symmetric key encryption is implemented as either block encryption or
+                stream encryption, the former of which encrypts inputs in blocks of
+                plaintext, and the latter of which encrypts inputs by individual
+                characters.
+              </p>
+              <br/>
+            </section>
+      
+            <section class="article-section">
+              <p class="article-text">
+                Modern stream encryption is based on one model by which the plain text
+                is logically combined with a pseudorandom key-stream on bits level
+                (e.g., Daemen and Clapp 1998; Min and Chen, 2013). However, due to many
+                weaknesses resulted mostly from the mathematical dependencies of the
+                model, stream encryptions have never achieved the level of reliability
+                and confidence that would allow them to be applied more extensively in
+                modern computing (e.g., Daemen et al., 1993).
+              </p>
+              <br/>
+            </section>
+      
+            <section class="article-section">
+              <p class="article-text">
+                All modern stream encryption systems are based on the famous
+                "One-Time-Pad" (OTP) encryption (Hammersmith 2002) by which the plain
+                text is encrypted letter by letter using a key-stream that is of the
+                same size as the plain text through direct mapping. The key-stream is
+                generated randomly and only used once and has no mathematical relation
+                neither with the plain text nor the outcome, which makes the "one-pad"
+                encryption theoretically mathematically unbreakable. However, this comes
+                with significant implementation requirements that make it expensive to
+                implement and very limited to high end application (e.g., Rueppe,l
+                1986).
+              </p>
+              <br/>
+            </section>
+      
+            <section class="article-section">
+              <p class="article-text">
+                Therefore, the OTP concept was implemented differently by which the
+                key-stream is generated one a pseudorandom manner through a logical
+                function and combined bitby-bit with the plain text using logical
+                operation such Exclusive OR (XOR). Due to this logical dependency,
+                modern stream encryptions have inherited vulnerabilities such as
+                repetitive key-stream, encryption key can't be re-used and detectable
+                mathematical functions. All these limitation has made cipher encryption
+                breakable and unreliable for heavy applications. On the other hand,
+                block cipher offers much stronger encryption however due its bulky
+                nature that is based on encrypting big chunks of data at once, it has
+                limited application in real-time and stream communications. Hence,
+                developing a new stream encryption that offers "one-timepad" strength
+                and efficiency would enable many new and reliable real time applications
+                for encryptions.
+              </p>
+              <br/>
+            </section>
+      
+            <section class="article-section">
+              <p class="article-text">
+                We present the design of a new stream encryption method that offers the
+                strength and complexity to overcome the weaknesses and shortfall in
+                current stream encryption methods using a new symmetric encryption model
+                that encrypts/decrypts information along a path through
+                multi-dimensional numeric space composed of cells arranged to form one
+                encryption map. The main idea is to eliminate any mathematical
+                relationship between the path and the encryption values in the cells in
+                order to eliminate most of the issues found in the current classic
+                stream encryption methods. Unlike modern stream encryption, the present
+                invention uses the 2D/3D & 4D numeric map as an encryption function and
+                the encryption path as a key-stream. The path is generated from a
+                symmetric secrete encryption key shared between the sender and the
+                receiver, who both share the same encryption map with its parameters.
+                The encryption map parameters has to be designed to yield complexity
+                that would make breaking the encoding computationally infeasible even
+                using today's fastest supercomputers. Another fundamental difference
+                between present invention and current stream encryption methods is that
+                encryption/decryption process is taking place on the Unicode characters
+                hexadecimal values (4-bits at a time) instead of 1-bit at time, which
+                makes the encryption process more complex to break against traditional
+                attacks yet faster and more efficient.
+              </p>
+              <br/>
+            </section>
+      
+            <section class="article-section">
+              <p class="article-text">
+                The rest of the paper is organized as follows. In section 2, we describe
+                how HSE works in details and illustrate how it can be incorporated in a
+                secured encrypted communication protocol. In section 3, we provide an
+                analysis of its performance in terms of encryption speed and security.
+                And finally in section 4, we conclude and point out future research
+                direction.
+              </p>
+              <br/>
+            </section>
+          </article>
+          <div *ngIf="section.title === 'Algorithm Description'" class="content-container">
+            <p class="description-text">
+              The proposed encryption algorithm can be visualized by a map of
+              hexadecimal numbers arranged into encryption cells. Figure 1 shows
+              an example of such an encryption cell that makes up the Hive
+              encryption map. As shown in the Figure 1, each cell (denoted by its
+              cell index (1)) is of a hexagon shape contains 16 Encryption Point
+              (2) along its 6 sides. Each Encryption Point (2) has two values; the
+              Plain Text Value (3) and the Cipher Text Value (4). The present
+              encryption is Hexadecimal based where encryption is taking place
+              4-bits at a time instead of bit by bit basis.
+            </p>
+    
+            <p class="description-text">
+              At an Encryption Point the encryption process takes place by direct
+              mapping of the hexadecimal number represented in the Plain Text
+              Value (3) with the corresponding hexadecimal number represented in
+              the Cipher Text Value (4).
+            </p>
+            
+            <p class="description-text">
+              In actual implementation, there will be a Hive encryption map consisting of multiple encryption cells like the one depicted in Figure 1. For example, Figure 2 illustrates a Hive encryption map that is composed of 12 encryption cells. The map is constructed such that the Cipher Text Values within the Encryption Cells can either be generated randomly (Confusion) or by constantly shifting these values, within copies of the randomly generated cells, one step in clock-wise direction (Diffusion). For example the Encryption Cell number 12 is generated randomly and Encryption Cell number 1 the Cipher Text Value is the same value as Encryption Cell number 12 but shifted one step clock-wise. So in Cell number 12 the Plain Text Value of 0x0 is encrypted by 0xA of Cipher Text Value, however in cell number 1 0x0 is encrypted by 0x6 and so on. Also Figure 2 shows the Encryption Path (4) in the map, which represents the order of cells the encryption process will take place in, and in this case it is 1→2→7→3→4→9→8→5→6→11→10→12.
+            </p>
+
+            <div class="image-gallery">
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets/TEMP/5776b0078eb6ddf6decfa285fc62ccc22a6cbc27?placeholderIfAbsent=true&apiKey=80db7a94ff96497195a901986eba8c45"
+                alt="Encryption cell diagram"
+                class="gallery-image"
+              />
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets/TEMP/4b68a8febd1b85744fdacd13dc72d937f9be3f72?placeholderIfAbsent=true&apiKey=80db7a94ff96497195a901986eba8c45"
+                alt="Encryption process diagram"
+                class="gallery-image secondary"
+              />
+            </div>
+    
+            <section class="table-section">
+              <p class="description-text">
+                According to the encryption path on the Hive map shown in Figure
+                2, the word "THE" can be encrypted as illustrated in the following
+                Table 1.
+              </p>
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets/TEMP/6173bfd71ea27166efd8fa2aa71d45c1756c59b9?placeholderIfAbsent=true&apiKey=80db7a94ff96497195a901986eba8c45"
+                alt="Encryption table"
+                class="table-image"
+              />
+            </section>
+    
+            <section class="binary-section">
+              <p class="description-text">
+                If we convert the above encryption operation in Table 1 into
+                binary it will yield the following:
+              </p>
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets/TEMP/bb36b05e1114c1612c45c20bf7779fa8024e9bcc?placeholderIfAbsent=true&apiKey=80db7a94ff96497195a901986eba8c45"
+                alt="Binary conversion table"
+                class="binary-image"
+              />
+            </section>
+            <section class="description-text" style="padding-left:1.5% ;">
+              <p>As per the encryption operation in Table 1, the following can be noticed:</p>
+    <ol>
+      <li>There is no mathematical relationship between the Plain Text values and the Cipher Text values;</li>
+      <li>There is no mathematical relationship between the encryption path and neither Plain Text values nor the Cipher Text values, as the path is governed by an independent mechanism/algorithm;</li>
+      <li>The encryption process is taking place on hexadecimal number (that’s 4-bits a time), which makes Hive Encryption 4-times faster than current stream encryption methodologies;</li>
+      <li>Each Plain Text Hexadecimal requires one cell hence the encryption path has to be long enough for encrypting all Plain Text data.</li>
+    </ol>
+  
+            </section>
+            <section class="properties-section">
+              <p class="description-text">
+                The Hive Encryption map has the following properties:
+                <br/><br/>
+                <b>Scalable Complexity: </b>the complexity of the map can be scaled and managed easily as it’s a matter of increasing the number of the encryption cells. The complexity of map is measured by the possible number of path it contains which can be calculated as the following example: Number of Possible Encryption Path = 2n , 3 n , 4n , where n is number of encryption cells. So for example for a 2,000 cells map, the number of possible encryption path will be 22,000 = 1.2 x 10602 unique paths capable of encrypting more than 2.2 x10587 TB of data before the path repeats itself again.
+                <br/><br/>
+                <b>Confusion and Diffusion: </b>by either generating the Cipher Text Values randomly (Confusion) or by rotating them the Cipher Text Value of the randomly generated Encryption Cells one step clockwise (Diffusion). The resulted cipher will be scrambled and looks totally random from external attacker’s point of view.
+                <br/><br/>
+                <b>Encryption Path Generation Function: </b>the encryption key is used as a seed for generating the required path for encrypting the plain text. This function is unique and its consistence is such that when the sender and the receiver use two copies of the same map and the symmetric encryption keys the generated path will be the same at both ends.
+                <br/><br/>
+                <b>Encryption Map Tuning Function: </b>In order to ensure each encryption session is unique and will generate different set of encryption data the map has to be tuned each time it's used. To implement that the map will use Encryption Map Tuning Function, by which the cells within the map can be re-arranged accordingly. This function enables changing and scrambling the values of the map to create a new topology of the map to enable the re-use of the same map between the same users more than one time.
+                <br/><br/>
+                The Encryption Path is generated from the cells’ numbers according to a function that associated with the Hive map. This function is responsible for generating the Encryption Path using the encryption key that will be shared between the sender and receiver. To achieve this, the encryption key itself is a subset of the encryption path and represents the first part of the path.
+
+              </p>
+              <!-- <h3 class="subsection-title">Properties of Hive Encryption:</h3>
+              <ul class="properties-list">
+                <li><strong>Scalable Complexity:</strong> the complexity of the map can be scaled and managed easily</li>
+                <li><strong>Confusion and Diffusion:</strong> by either generating the Cipher Text Values randomly</li>
+                <li><strong>Encryption Path Generation Function:</strong> the encryption key is used as a seed</li>
+                <li><strong>Encryption Map Tuning Function:</strong> ensures each encryption session is unique</li>
+              </ul> -->
+            </section>
+    
+            <section class="description-text" style="padding-left:1.5% ;">
+              <p>A Hive encryption protocol would operate as the following steps:</p>
+              <ol>
+                <li>The process starts by the sender and the receiver getting copy of a common Hive map they will use for the encryption / decryption of data between them. This common Hive map will be standard and would be found on the World Wide Web and come with different sizes and Encryption Path Function;</li>
+          
+                <li>The sender then, for the first time during the setup of the encryption, will tune the map using set of define parameters or initiation vector in order to customize it for the communication with the receiver;</li>
+          
+                <li>The sender then will send the tuning parameters or initiation vector to the receiver;</li>
+          
+                <li>The receiver will in turn tune the map to be identical to the sender’s map;</li>
+          
+                <li>The sender then generates from the map an Encryption Key that will be used symmetrically with the receiver for the encryption process. The size of the key can vary depending on the agreed parameters between the sender and receiver;</li>
+          
+                <li>After generating the encryption key the sender will then send it to the receiver over a secure channel using any of the known standard methods for exchanging secret symmetric keys;</li>
+          
+                <li>The sender then will use the encryption key along with the map to encrypt the plain text he/she would like to send. The map will work on the same dynamic explained above by taking the encryption key as a seed to generate the required length of the encryption path in accordance with the map’s path function as explained using <span class="figure-ref">Figure 3</span>.</li>
+          
+                <li>The encryption process takes place and the cipher text is streamed down the (unsecure) communication channel between the sender and the received. Given the dynamic of the Hive encryption, there is no limitation in the length of the encryption process that will go on as long as it’s needed.</li>
+          
+                <li>The receiver will then uses the Hive map and the encryption key to decrypt the cipher text into the original plain text that was sent.</li>
+              </ol>
+          
+  
+              <figure class="diagram-container">
+                <p>The above steps can be illustrated by the following <span class="figure-ref">Figure 3</span>.</p>
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets/TEMP/851718dba7e8cd757f6061f454cc00cf4e46402a?placeholderIfAbsent=true&apiKey=80db7a94ff96497195a901986eba8c45"
+                  alt="Protocol diagram"
+                  class="protocol-diagram"
+                />
+                <figcaption class="diagram-caption">Figure 3: Protocol Flow Diagram</figcaption>
+              </figure>
+            </section>
+            <section class="description-text" style="padding-left:1.5% ;">
+              <p>In terms of implementation, the proposed algorithm can be programmed using structured programming language (such as C) or object oriented language (such as C++ or C#) as the following brief design outline:</p>
+
+              <ol>
+                <li>Encryption Cells can be programmed as user-define structure type as the following: <br>
+                  <code>Struct EncryptionCell &#123; Int CellNumber; Unsigned char plainTextValues [16]; Unsigned char cipherTextValue [16]; &#125;</code>
+                </li>
+          
+                <li>The Hive map can be coded as one dimensional array or EncryptionCell type as the following: <br>
+                  <code>EncryptionCell HiveMap [MAP_SIZE];</code>
+                </li>
+          
+                <li>The encryption process can be initiated by creating the encryption path using the encryption key as the following: <br>
+                  <code>CreateEncryptionPath (EncryptionKey key1);</code>
+                </li>
+          
+                <li>After the generation of the encryption path the process can start as the following: <br>
+                  <p>
+                    while ((plainTextHexChar = getCharFromStream()) != EndOfStream) &#123;
+                      cipherTextHexChar = HiveMap[plainTextHexChar];
+                      sendCipher(cipherTextHexChar);
+                      moveToNextEncryptionCellOnPath();
+                    &#125;
+                    </p>
+                </li>
+          
+                <li>The decryption will the reverse of the encryption process and can be programmed in the same way. To enable the re-use of the encryption key this invention uses two mechanisms:</li>
+          
+                <li>Use of time stamp that can be used in conjunction with the encryption key to generate a unique encryption path depending on the time of the communication session;</li>
+          
+                <li>Use dynamic cell padding by assigning random values to the outcome produced by some selected encryption cells that yield different stream cipher if the key is reused.</li>
+              </ol>
+            </section>
+          </div>
+          <div *ngIf="section.title === 'Encryption System Design and Performance'" class="content-container">
+              <design-criteria-table></design-criteria-table>
+              <encryption-system></encryption-system>
+              <attack-analysis-table></attack-analysis-table>
+              <three-dimensional-section></three-dimensional-section>
+          </div>
+          <div>
+            <section>
+              <p>
+                In this paper, we propose a new stream encryption algorithm, Hive Stream Encryption (HSE) that improves upon the existing stream encryption methods. The core of HSE is a new symmetric encryption model that encrypts/decrypts information along a path through multi-dimensional numeric space composed of cells arranged to form one encryption map. We show that HSE is able to eliminate any mathematical relationship between the path and the encryption values in the cells and as a result, can eliminate most of the issues inherited in the current classic stream encryption methods. 
+</p>
+<br/>
+<p>The natural next step in this research, which we are undertaking right now, is to develop a prototype of the HSE system, and measure its performance in a real-world setting.
+              </p>
+            </section>
+          </div>
+        </mat-expansion-panel>
+      </mat-accordion>
+    </div>
+    
+  </div>
+
+</div>

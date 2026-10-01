@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 500 500">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-2 {
+        fill: url(#Gold);
+      }
+
+      .cls-3 {
+        font-family: Gotham-Bold, Gotham;
+      }
+
+      .cls-3, .cls-4 {
+        font-weight: 700;
+      }
+
+      .cls-5 {
+        fill: url(#linear-gradient-5);
+      }
+
+      .cls-6 {
+        fill: url(#linear-gradient-6);
+      }
+
+      .cls-7 {
+        fill: url(#linear-gradient-4);
+      }
+
+      .cls-8 {
+        fill: url(#linear-gradient-3);
+      }
+
+      .cls-9 {
+        fill: url(#linear-gradient-2);
+      }
+
+      .cls-10, .cls-11 {
+        fill: #231f20;
+      }
+
+      .cls-12 {
+        fill: url(#linear-gradient);
+      }
+
+      .cls-13 {
+        fill: url(#Gold-7);
+      }
+
+      .cls-14 {
+        fill: url(#Gold-6);
+      }
+
+      .cls-15 {
+        fill: url(#Gold-2);
+      }
+
+      .cls-16 {
+        fill: url(#Gold-9);
+      }
+
+      .cls-17 {
+        fill: url(#Gold-4);
+      }
+
+      .cls-18 {
+        fill: url(#Gold-3);
+      }
+
+      .cls-19 {
+        fill: url(#Gold-8);
+      }
+
+      .cls-20 {
+        fill: url(#Gold-5);
+      }
+
+      .cls-21 {
+        font-family: MyriadPro-Regular, 'Myriad Pro';
+      }
+
+      .cls-11 {
+        font-size: 42px;
+      }
+
+      .cls-4 {
+        font-family: Arial-BoldMT, Arial;
+      }
+
+      .cls-22 {
+        fill: url(#Gold-10);
+      }
+
+      .cls-23 {
+        fill: url(#Gold-16);
+      }
+
+      .cls-24 {
+        fill: url(#Gold-11);
+      }
+
+      .cls-25 {
+        fill: url(#Gold-13);
+      }
+
+      .cls-26 {
+        fill: url(#Gold-15);
+      }
+
+      .cls-27 {
+        fill: url(#Gold-19);
+      }
+
+      .cls-28 {
+        fill: url(#Gold-17);
+      }
+
+      .cls-29 {
+        fill: url(#Gold-18);
+      }
+
+      .cls-30 {
+        fill: url(#Gold-20);
+      }
+
+      .cls-31 {
+        fill: url(#Gold-21);
+      }
+
+      .cls-32 {
+        fill: url(#Gold-12);
+      }
+
+      .cls-33 {
+        fill: url(#Gold-14);
+      }
+    </style>
+    <linearGradient id="Gold" x1="78.53" y1="153.63" x2="126.58" y2="153.63" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ffe7a3"/>
+      <stop offset=".5" stop-color="#ffca05"/>
+      <stop offset="1" stop-color="#faac18"/>
+    </linearGradient>
+    <linearGradient id="Gold-2" data-name="Gold" x1="78.61" y1="181.99" x2="126.36" y2="181.99" gradientTransform="translate(-.32 1.01)" xlink:href="#Gold"/>
+    <linearGradient id="Gold-3" data-name="Gold" x1="78.53" y1="211.75" x2="126.58" y2="211.75" xlink:href="#Gold"/>
+    <linearGradient id="Gold-4" data-name="Gold" x1="79.84" y1="241.26" x2="126.58" y2="241.26" xlink:href="#Gold"/>
+    <linearGradient id="Gold-5" data-name="Gold" x1="78.41" y1="269.15" x2="126.17" y2="269.15" xlink:href="#Gold"/>
+    <linearGradient id="Gold-6" data-name="Gold" x1="79.31" y1="297.16" x2="126.58" y2="297.16" xlink:href="#Gold"/>
+    <linearGradient id="Gold-7" data-name="Gold" x1="78.41" y1="327.92" x2="126.58" y2="327.92" xlink:href="#Gold"/>
+    <linearGradient id="Gold-8" data-name="Gold" x1="78.41" y1="300.74" x2="125.32" y2="300.74" xlink:href="#Gold"/>
+    <linearGradient id="linear-gradient" x1="337.46" y1="123.63" x2="386.22" y2="123.63" gradientTransform="translate(-2.76 -1.32) rotate(.03) scale(1.01) skewX(.06)" gradientUnits="userSpaceOnUse">
+      <stop offset=".58" stop-color="#faac18"/>
+      <stop offset="1" stop-color="#ffca05"/>
+      <stop offset="1" stop-color="#ffd12b"/>
+      <stop offset="1" stop-color="#ffdc6b"/>
+      <stop offset="1" stop-color="#ffe493"/>
+      <stop offset="1" stop-color="#ffe7a3"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="347.94" y1="96.22" x2="410.38" y2="97.35" gradientTransform="translate(-1.56 .38) rotate(-.16) skewX(-.31)" gradientUnits="userSpaceOnUse">
+      <stop offset=".22" stop-color="#faac18"/>
+      <stop offset="1" stop-color="#ffca05"/>
+      <stop offset="1" stop-color="#ffcd15"/>
+      <stop offset="1" stop-color="#ffd440"/>
+      <stop offset="1" stop-color="#ffe185"/>
+      <stop offset="1" stop-color="#ffe7a3"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-3" x1="385.73" y1="123.56" x2="434.21" y2="123.56" gradientTransform="translate(9.13 3.35) rotate(-.28) scale(.98) skewX(-.56)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ffca05"/>
+      <stop offset=".83" stop-color="#faac18"/>
+    </linearGradient>
+    <linearGradient id="Gold-9" data-name="Gold" x1="273.39" y1="291.38" x2="320.46" y2="291.38" xlink:href="#Gold"/>
+    <linearGradient id="Gold-10" data-name="Gold" x1="274.78" y1="262.98" x2="321.85" y2="262.98" xlink:href="#Gold"/>
+    <linearGradient id="Gold-11" data-name="Gold" x1="273.39" y1="233.18" x2="320.46" y2="233.18" xlink:href="#Gold"/>
+    <linearGradient id="Gold-12" data-name="Gold" x1="274.78" y1="203.39" x2="321.85" y2="203.39" xlink:href="#Gold"/>
+    <linearGradient id="Gold-13" data-name="Gold" x1="273.39" y1="173.59" x2="320.46" y2="173.59" xlink:href="#Gold"/>
+    <linearGradient id="linear-gradient-4" x1="274.78" y1="143.8" x2="321.85" y2="143.8" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ffe7a3"/>
+      <stop offset=".5" stop-color="#ffca05"/>
+      <stop offset="1" stop-color="#faac18"/>
+    </linearGradient>
+    <linearGradient id="Gold-14" data-name="Gold" x1="273.33" y1="105.01" x2="321.98" y2="105.01" gradientTransform="translate(.24 -.3) rotate(.05) skewX(.11)" xlink:href="#Gold"/>
+    <linearGradient id="linear-gradient-5" x1="288.24" y1="96.13" x2="339.29" y2="96.13" gradientTransform="translate(-1.85 -1.89) rotate(.2) skewX(.41)" gradientUnits="userSpaceOnUse">
+      <stop offset=".26" stop-color="#ffca05"/>
+      <stop offset="1" stop-color="#faac18"/>
+      <stop offset="1" stop-color="#ffe7a3"/>
+    </linearGradient>
+    <linearGradient id="Gold-15" data-name="Gold" x1="273.39" y1="127.69" x2="319.97" y2="127.69" xlink:href="#Gold"/>
+    <linearGradient id="Gold-16" data-name="Gold" x1="261.17" y1="300.33" x2="301.04" y2="300.33" gradientTransform="translate(-32.36 -203.98) scale(1.18 1.7)" xlink:href="#Gold"/>
+    <linearGradient id="Gold-17" data-name="Gold" x1="273.53" y1="314.11" x2="320.73" y2="314.11" xlink:href="#Gold"/>
+    <linearGradient id="Gold-18" data-name="Gold" x1="261.03" y1="307.56" x2="300.9" y2="307.56" gradientTransform="translate(-32.36 -203.98) scale(1.18 1.7)" xlink:href="#Gold"/>
+    <linearGradient id="Gold-19" data-name="Gold" x1="273.34" y1="319.44" x2="320.25" y2="319.44" xlink:href="#Gold"/>
+    <linearGradient id="Gold-20" data-name="Gold" x1="275.21" y1="319.08" x2="323.27" y2="319.08" gradientTransform="translate(12.32 -87.61) rotate(2.29) scale(1.01 1.24)" xlink:href="#Gold"/>
+    <linearGradient id="Gold-21" data-name="Gold" x1="276.17" y1="315.98" x2="323.08" y2="315.98" gradientTransform="translate(41.06 -35.87) rotate(7.82) scale(1.01 1)" xlink:href="#Gold"/>
+    <linearGradient id="linear-gradient-6" x1="384.5" y1="149.61" x2="433.21" y2="149.61" gradientTransform="translate(3.74 1.8) rotate(-.03) scale(.99) skewX(-.07)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ffe7a3"/>
+      <stop offset="0" stop-color="#ffe6a1"/>
+      <stop offset="0" stop-color="#ffe59a"/>
+      <stop offset="0" stop-color="#ffe38e"/>
+      <stop offset="0" stop-color="#ffe07d"/>
+      <stop offset="0" stop-color="#ffdc67"/>
+      <stop offset="0" stop-color="#ffd74c"/>
+      <stop offset="0" stop-color="#ffd12c"/>
+      <stop offset="0" stop-color="#ffca08"/>
+      <stop offset="0" stop-color="#ffca05"/>
+      <stop offset=".37" stop-color="#fcbb0e"/>
+      <stop offset=".84" stop-color="#faac18"/>
+    </linearGradient>
+  </defs>
+  <polygon class="cls-10" points="78.63 123.75 257 20.9 306.79 48.13 126.58 152.21 126.17 355.56 78.41 327.92 78.63 123.75"/>
+  <polygon class="cls-10" points="237.28 126.54 189.91 153.24 189.65 358.33 237.28 332.26 237.28 126.54"/>
+  <text class="cls-11" transform="translate(126.58 474.03)"><tspan class="cls-3" x="0" y="0">HIVE </tspan><tspan class="cls-21" x="118.27" y="0">| </tspan><tspan class="cls-4" x="137.21" y="0">الخَـلــيِّـة</tspan></text>
+  <rect class="cls-10" x="126.15" y="200.63" width="64.51" height="46.92"/>
+  <polygon class="cls-2" points="126.58 153.63 78.53 183.53 78.53 123.74 126.58 153.63"/>
+  <polygon class="cls-15" points="78.63 182.03 126.58 211.85 126.58 152.22 78.63 182.03"/>
+  <polygon class="cls-18" points="126.58 211.75 78.53 242.71 78.53 180.78 126.58 211.75"/>
+  <polygon class="cls-17" points="79.84 241.26 126.58 270.76 126.58 211.75 79.84 241.26"/>
+  <polygon class="cls-20" points="126.17 269.15 78.41 298.49 78.41 239.8 126.17 269.15"/>
+  <polygon class="cls-14" points="79.31 297.16 126.58 325.95 126.58 268.37 79.31 297.16"/>
+  <polygon class="cls-13" points="78.41 327.92 126.58 356.43 126.58 299.41 78.41 327.92"/>
+  <polygon class="cls-19" points="125.32 300.74 78.41 327.92 78.41 273.56 125.32 300.74"/>
+  <line class="cls-1" x1="321.23" y1="194.25" x2="321.26" y2="325.56"/>
+  <polygon class="cls-12" points="387.38 151.86 387.18 95.75 338.13 124.4 387.38 151.86"/>
+  <polygon class="cls-9" points="338.36 124.5 387.18 95.75 339.53 68.13 338.36 124.5"/>
+  <polygon class="cls-8" points="385.14 150.3 432.63 122.19 386.39 95.39 385.14 150.3"/>
+  <g>
+    <polygon class="cls-16" points="320.46 291.38 273.39 322.21 273.39 260.55 320.46 291.38"/>
+    <polygon class="cls-22" points="274.78 262.98 321.85 293.81 321.85 232.15 274.78 262.98"/>
+    <polygon class="cls-24" points="320.46 233.18 273.39 264.01 273.39 202.35 320.46 233.18"/>
+    <polygon class="cls-32" points="274.78 203.39 321.85 234.22 321.85 172.56 274.78 203.39"/>
+    <polygon class="cls-25" points="320.46 173.59 273.39 204.42 273.39 142.76 320.46 173.59"/>
+    <polygon class="cls-7" points="274.78 143.8 321.85 174.63 321.85 112.97 274.78 143.8"/>
+    <polygon class="cls-33" points="320.75 131.59 321.96 78.41 273.39 106.78 320.75 131.59"/>
+    <polygon class="cls-5" points="338.46 124.57 339.52 68.13 288.3 98.05 338.46 124.57"/>
+    <polygon class="cls-26" points="319.97 127.69 273.39 148.6 273.39 106.78 319.97 127.69"/>
+    <polygon class="cls-23" points="274.94 305.8 321.85 321.6 321.85 289.99 274.94 305.8"/>
+    <polygon class="cls-28" points="320.73 314.11 273.53 322.21 273.53 306.01 320.73 314.11"/>
+    <polygon class="cls-29" points="274.78 318.07 321.69 321.6 321.69 314.55 274.78 318.07"/>
+    <polygon class="cls-27" points="320.25 319.44 273.34 321.91 273.34 316.98 320.25 319.44"/>
+    <polygon class="cls-30" points="321.85 321.63 273.38 322.13 273.57 317.3 321.85 321.63"/>
+    <polygon class="cls-31" points="321.96 321.6 274.24 320.21 275.63 310.21 321.96 321.6"/>
+  </g>
+  <polygon class="cls-6" points="432.77 177.12 432.63 122.19 384.53 150.29 432.77 177.12"/>
+  <polygon class="cls-10" points="432.64 326.45 432.64 200.98 321.74 200.98 321.86 241.88 386.09 241.88 386.09 280.47 321.86 280.47 321.97 321.96 344.05 321.96 208.29 400.15 255.77 427.23 432.64 326.45"/>
+</svg>

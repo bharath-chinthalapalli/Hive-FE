@@ -1,0 +1,13 @@
+/* Add these styles to your CSS or Tailwind config as utilities */
+.clip-triangle {
+  clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
+}
+.rounded-triangle {
+  /* Mask to round the bottom point */
+  mask: 
+    radial-gradient(20px at 50% 100%, #000 99%, transparent 101%);
+}
+
+::ng-deep .grecaptcha-badge {
+  visibility: hidden !important;
+}

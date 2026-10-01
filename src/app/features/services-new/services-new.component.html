@@ -1,0 +1,162 @@
+<main class="overall-page">
+  <div class="w-full bg-[#231F20] text-white z-10 3xs:pl-16 pl-8 py-4">
+    <!-- <a class="tracking-wider" routerLink="/">Home / <span class="text-gray-400">Services</span></a> -->
+    <nav class="tracking-wider">
+      <a routerLink="/" class="hover:underline underline-offset-4 cursor-pointer">Home</a>
+      /
+      <span class="text-[#A7A5A6] ">Services</span>
+    </nav>
+  </div>
+  <section class="mx-0 my-10">
+    <div class="services-container mb-4">
+      <ngx-slick-carousel #slickModal="slick-carousel" class="carousel" [config]="slideConfig">
+        @for (card of cards; track card) {
+        <div ngxSlickItem
+          class="service-card p-8  md:min-h-[240px] lg:min-h-[240px] xl:min-h-[220px] 6xl:min-h-[200px] 7xl:min-h-[240px] 8xl:min-h-[240px] my-4 hover:shadow-md cursor-pointer mx-4">
+          <div class="flex flex-col gap-4 ">
+            <div class="flex items-center gap-2">
+              <!-- <mat-icon class="card-icon"3xl:w-[560px] 4xl:w-[580px] 5xl:w-[644px] 6xl:w-[600px] 7xl:w-[620px] 8xl:w-[620px]  3xl:[200px] 3xl:[220px] 3xl:[245px]>
+                {{card.icon}}
+              </mat-icon> -->
+              <div class="m-1">
+                <img [src]="card.icon" alt="icon" class="w-full">
+              </div>
+              <div
+                class="line-clamp-2 leading-relaxed 5xs:text-base 4xs:text-lg 3xs:text-lg 2xs:text-2xl xs:text-2xl sm:text-2xl md:text-2xl lg:text-2xl xl:text-2xl 2xl:text-2xl 3xl:text-2xl 4xl:text-2xl 5xl:text-3xl 6xl:text-3xl 7xl:text-4xl 8xl:text-4xl font-bold text-[#FAAD17]">
+                {{ card.title }}</div>
+            </div>
+            <div
+              class="line-clamp-4 leading-relaxed text-white card-description 5xs:text-xs 4xs:text-sm 3xs:text-sm 2xs:text-lg xs:text-lg sm:text-lg md:text-lg lg:text-lg xl:text-lg 3xl:text-lg 4xl:text-lg 5xl:text-xl 6xl:text-xl 7xl:text-2xl 8xl:text-2xl  pb-6">
+              {{ card.description }}</div>
+          </div>
+        </div>
+        }
+      </ngx-slick-carousel>
+    </div>
+    <div class="3xs:px-16 px-6">
+      <div class="flex flex-col gap-7 my-14 px-4">
+        <div
+          class="font-bold 5xs:text-xl 4xs:text-2xl 3xs:text-2xl 2xs:text-2xl xs:text-2xl sm:text-2xl lg:text-3xl xl:text-3xl 2xl:text-4xl 3xl:text-4xl 4xl:text-4xl 5xl:text-4xl 6xl:text-5xl 7xl:text-5xl 8xl:text-6xl text-[#FAAD17] text-center">
+          Benefits of HIVE:
+          <span class="text-[#231F20]">
+            Beyond Quantum Threats
+          </span>
+        </div>
+        <div>
+          <div>
+            <!-- Large screens (lg and up) -->
+            <img src="beyond_quantum_threats.svg" alt="benefits_hive" class="w-full hidden lg:block" loading="lazy" decoding="async">
+
+            <!-- Medium screens (md only) -->
+            <img src="beyond_quantum_medium.svg" alt="beyond_quantum_medium" class="w-full hidden md:block lg:hidden" loading="lazy" decoding="async">
+
+            <!-- Small screens (below md) -->
+            <img src="beyond_quantum_small.svg" alt="beyond_quantum_small" class="w-full block md:hidden" loading="lazy" decoding="async">
+          </div>
+
+        </div>
+        <div class="text-center">
+          <button (click)="navToBenefitsHive()"
+            class="bg-[#231F20] text-white 8xl:px-14 px-6 8xl:py-6 py-4 text-sm rounded-[4px] font-medium w-full sm:w-auto hover:bg-[#FAAD17] hover:text-black transition-colors">
+            <div
+              class="5xs:text-sm 4xs:text-sm 3xs:text-sm 2xs:text-sm xs:text-sm sm:text-sm md:text-sm lg:text-base xl:text-base 2xl:text-base 3xl:text-base 4xl:text-base 5xl:text-lg 6xl:text-lg 7xl:text-xl 8xl:text-3xl">
+              See All Benefits of HIVE
+            </div>
+          </button>
+        </div>
+      </div>
+      <div
+        class="px-4 block xl:flex items-start xl:gap-10 2xl:gap-6 3xl:gap-16 4xl:gap-8 5xl:gap-2 6xl:gap-2 7xl:gap-2 8xl:gap-2 xl:my-20 my-10">
+        <div
+          class="w-full p-2  xl:w-10/12 2xl:w-11/12 3xl:w-3/4 4xl:w-3/5 5xl:w-10/12 6xl:w-[75%] 7xl:w-2/3 8xl:w-1/2  lg:w-full">
+          <img src="hive_financial_new.svg" alt="hive_financial" class="m-auto 2xl:m-0 " loading="lazy" decoding="async">
+        </div>
+        <div class="flex flex-col gap-4 w-full  xl:mt-0 mt-14 ">
+          <div
+            class="font-bold 5xs:text-xl 4xs:text-2xl 3xs:text-2xl 2xs:text-2xl xs:text-2xl sm:text-2xl lg:text-3xl xl:text-3xl 2xl:text-4xl 3xl:text-4xl 4xl:text-4xl 5xl:text-4xl 6xl:text-5xl 7xl:text-5xl 8xl:text-6xl text-[#FAAD17]  ">
+            HIVE Encryption for Financial Services:
+            <span class="text-[#231F20]">
+              Uncompromising Security for Critical Transactions
+            </span>
+          </div>
+          <div
+            class="5xs:text-xs 4xs:text-xs 3xs:text-sm 2xs:text-sm xs:text-base sm:text-base md:text-lg lg:text-lg xl:text-lg 3xl:text-lg 4xl:text-xl 5xl:text-2xl 6xl:text-2xl 7xl:text-2xl 8xl:text-3xl font-bold  ">
+            Problem:
+            <span class=" !font-normal text-[#231F20]">
+              High-value transactions, stringent regulations, increasing cyber threats, need for quantum-safe solutions
+              for long-term data archival.
+            </span>
+          </div>
+          <div class="">
+            <div
+              class="5xs:text-xs 4xs:text-xs 3xs:text-sm 2xs:text-sm xs:text-base sm:text-base md:text-lg lg:text-lg xl:text-lg 3xl:text-lg 4xl:text-xl 5xl:text-2xl 6xl:text-2xl 7xl:text-2xl 8xl:text-3xl font-bold text-[#FAAD17] text-left">
+              HIVE Solution: </div>
+            <ol
+              class="list-disc 5xs:text-xs 4xs:text-xs 3xs:text-sm 2xs:text-sm xs:text-base sm:text-base md:text-lg lg:text-lg xl:text-lg 3xl:text-lg 4xl:text-xl 5xl:text-2xl 6xl:text-2xl 7xl:text-2xl 8xl:text-3xl !font-normal !text-[#231F20] ml-4">
+              <li>
+                Real-time secure payment processing (4x faster encryption).
+              </li>
+              <li>
+                Secure customer data protection against all known and future attacks.
+              </li>
+              <li>
+                Quantum-resistant encryption for long-term storage of financial records.
+              </li>
+              <li>
+                Compliance with global data privacy regulations.
+              </li>
+            </ol>
+          </div>
+          <div>
+            <p
+              class="5xs:text-xs 4xs:text-xs 3xs:text-sm 2xs:text-sm xs:text-base sm:text-base md:text-lg lg:text-lg xl:text-lg 3xl:text-lg 4xl:text-xl 5xl:text-2xl 6xl:text-2xl 7xl:text-2xl 8xl:text-3xl font-bold   text-[#FAAD17] ">
+              Key Benefits:
+              <span class=" !font-normal !text-[#231F20]">
+                Enhanced trust, fraud prevention, regulatory compliance, future-proof infrastructure.
+              </span>
+            </p>
+          </div>
+          <div>
+            <div
+              class="5xs:text-xs 4xs:text-xs 3xs:text-sm 2xs:text-sm xs:text-base sm:text-base md:text-lg lg:text-lg xl:text-lg 3xl:text-lg 4xl:text-xl 5xl:text-2xl 6xl:text-2xl 7xl:text-2xl 8xl:text-2xl font-bold   text-[#FAAD17] ">
+              Specific Examples:
+              <span class=" !font-normal !text-[#231F20]">
+                Interbank transfers, secure online banking, credit card data protection, blockchain security
+                enhancement.
+              </span>
+            </div>
+          </div>
+          <div class="flex flex-col sm:flex-row gap-4 mt-2">
+            <button (click)="navToSellAllIndustries()"
+              class="bg-[#FAAD17] text-[#231F20] 8xl:px-14 px-6 8xl:py-6 py-4 rounded-[4px] font-bold w-full sm:w-auto hover:bg-black hover:text-white transition-colors">
+              <div
+                class="5xs:text-sm 4xs:text-sm 3xs:text-sm 2xs:text-sm xs:text-sm sm:text-sm md:text-sm lg:text-base xl:text-base 2xl:text-base 3xl:text-base 4xl:text-base 5xl:text-lg 6xl:text-lg 7xl:text-xl 8xl:text-3xl">
+                See All Industries
+              </div>
+            </button>
+            <button (click)="navToDemo()"
+              class="border border-black text-[#231F20] 8xl:px-14 px-6 8xl:py-6 py-4 rounded-[4px] font-bold w-full sm:w-auto hover:bg-black hover:text-white transition-colors">
+              <div
+                class="5xs:text-sm 4xs:text-sm 3xs:text-sm 2xs:text-sm xs:text-sm sm:text-sm md:text-sm lg:text-base xl:text-base 2xl:text-base 3xl:text-base 4xl:text-base 5xl:text-lg 6xl:text-lg 7xl:text-xl 8xl:text-3xl">
+                Request a Financial Services Demo
+              </div>
+            </button>
+          </div>
+        </div>
+      </div> 
+     
+      <div class="flex flex-col gap-7 mt-4 my-10">
+        <h2
+          class="font-bold 5xs:text-xl 4xs:text-2xl 3xs:text-2xl 2xs:text-2xl xs:text-2xl sm:text-2xl lg:text-3xl xl:text-3xl 2xl:text-4xl 3xl:text-4xl 4xl:text-4xl 5xl:text-4xl 6xl:text-5xl 7xl:text-5xl 8xl:text-6xl text-[#FAAD17]  text-center">
+          HIVE:
+          <span class="text-[#231F20] ">
+            Unlocking Unprecedented Security for Diverse Industries
+          </span>
+        </h2>
+        <div class="">
+          <img src="hive_unlocking_new.svg" alt="benefits_hive" class="bg-cover w-full">
+        </div>
+      </div>
+    </div>
+  </section>
+</main>

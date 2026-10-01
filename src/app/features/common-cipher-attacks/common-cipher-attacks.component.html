@@ -1,0 +1,42 @@
+<div class="flex flex-col gap-4 ">
+    <div class="text-center m-auto mx-4 ">
+        <div class="font-bold 5xs:text-xl 4xs:text-2xl 3xs:text-2xl 2xs:text-2xl xs:text-2xl sm:text-2xl lg:text-3xl xl:text-3xl 2xl:text-4xl 3xl:text-4xl 4xl:text-4xl 5xl:text-4xl 6xl:text-5xl 7xl:text-5xl 8xl:text-6xl text-[#FAAD17]">Common Cipher Attacks and
+            <span class="text-[#231F20]">
+                their impacts on the HIVE encryption system
+            </span>
+        </div>
+    </div>
+    <div class="flex flex-col gap-4 ">
+        <div class="t5xs:text-xs 4xs:text-xs 3xs:text-sm 2xs:text-sm xs:text-base sm:text-base md:text-lg lg:text-lg xl:text-lg 3xl:text-lg 4xl:text-2xl 5xl:text-2xl 6xl:text-2xl 7xl:text-2xl 8xl:text-3xl text-[#868484] !leading-relaxed">
+            The following table shows the resistance to modern stream cipher attacks of the invention:
+        </div>
+        <p class="t5xs:text-xs 4xs:text-xs 3xs:text-sm 2xs:text-sm xs:text-base sm:text-base md:text-lg lg:text-lg xl:text-lg 3xl:text-lg 4xl:text-2xl 5xl:text-2xl 6xl:text-2xl 7xl:text-2xl 8xl:text-3xl text-[#868484] !leading-relaxed">
+            Table 2 shows the resistance to modern stream cipher attacks of the invention:
+        </p>
+        <div class="overflow-x-auto">
+            <table class="min-w-full border-[1px] text-[#231F20] border-[#DBDADE] 5xs:text-xs 4xs:text-xs 3xs:text-sm 2xs:text-sm xs:text-base sm:text-base md:text-base lg:text-base xl:text-base 3xl:text-lg 4xl:text-lg 5xl:text-xl 6xl:text-xl 7xl:text-xl 8xl:text-2xl leading-normal">
+                <thead class="bg-[#FFFFE4]">
+                    <tr class="text-left font-semibold text-gray-800">
+                        <th class="px-4 py-2 border-b  border-r w-[5%]">#</th>
+                        <th class="px-4 py-2 border-b border-r w-[20%]">Attack </th>
+                        <th class="px-4 py-2 border-b border-r w-[25%]">Description</th>
+                        <th class="px-4 py-2 border-b border-r w-[50%]">Impact on HIVE encryption</th>
+                    </tr>
+                </thead>
+                <tbody class="bg-white ">
+                    @for (item of commonListArray(); track item) {
+                    <tr class="border-b">
+                        <td class="p-3  !border-r ">{{item.sNo}}</td>
+                        <td class="p-3 border-r">{{item.attack}}</td>
+                        <td class="p-3 border-r">{{item.description}}.</td>
+                        <td class="p-3 border-r">
+                            {{item.impactHive}}
+                        </td>
+                    </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+    
+</div>

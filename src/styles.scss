@@ -1,0 +1,144 @@
+@use "tailwindcss/base";
+@use "tailwindcss/components";
+@use "tailwindcss/utilities";
+@use "@angular/material" as mat;
+
+/* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: 'Gotham'
+}
+
+
+@font-face {
+  font-family: 'Gotham';
+  src: url('/fonts/Gotham-Thin.otf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gotham';
+  src: url('/fonts/Gotham-XLight.otf') format('truetype');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gotham';
+  src: url('/fonts/Gotham-Light.otf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gotham';
+  src: url('/fonts/Gotham-Book.otf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gotham';
+  src: url('/fonts/Gotham-Medium.otf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gotham';
+  src: url('/fonts/Gotham-Bold.otf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gotham';
+  src: url('/fonts/Gotham-Black.otf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+
+
+.section-title {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 2.5 rem;
+  color: #FAAD17;
+}
+
+.section-sub-title {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1.7 rem;
+  color: #231F20;
+}
+
+@media (min-width: 1536px) and (max-width:1680px) {
+  .section-title {
+    font-size: 42px;
+    line-height: 1 rem;
+  }
+
+  .section-sub-title {
+    font-size: 24px;
+    line-height: 1.5 rem;
+  }
+}
+
+@media (min-width: 1681px) and (max-width:1920px) {
+  .section-title {
+    font-size: 48px;
+    line-height: 1 rem;
+  }
+
+  .section-sub-title {
+    font-size: 24px;
+    line-height: 1.5 rem;
+  }
+}
+
+
+@media (min-width: 1921px) and (max-width:2560px) {
+  .section-title {
+    font-size: 66px;
+    line-height: 1 rem;
+  }
+
+  .section-sub-title {
+    font-size: 32px;
+    line-height: 2 rem;
+  }
+}
+
+.mat-mdc-form-field {
+  @include mat.button-density(-2.5);
+  @include mat.input-density(-3);
+  @include mat.form-field-density(-3);
+  @include mat.icon-density(-2.5);
+  @include mat.select-density(-2.5);
+}
+
+::ng-deep .mat-mdc-form-field.mat-form-field-appearance-fill .mdc-text-field--filled:not(.mdc-text-field--disabled) {
+  background-color: #231F20 !important;
+  border-bottom: 1px solid white !important;
+  border-radius: 0 !important;
+}
+
+// ::ng-deep .mat-mdc-select-value,
+// ::ng-deep .mat-mdc-form-field-label,
+// ::ng-deep .mat-mdc-floating-label,
+// ::ng-deep .mat-mdc-select-arrow {
+//   color: white !important;
+// }
+
+// ::ng-deep .mat-mdc-form-field.mat-form-field-appearance-fill .mdc-line-ripple {
+//   background-color: white !important;
+// }

@@ -1,0 +1,88 @@
+.criteria-table {
+  width: 100%;
+  font-family: Open Sans, -apple-system, Roboto, Helvetica, sans-serif;
+  color: #000;
+  margin: 18px 0;
+}
+
+.table-header {
+  background-color: #ffffe4;
+  border: 1px solid #dbdade;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.56px;
+}
+
+.table-body {
+  border: 1px solid #dddade;
+  border-top: none;
+}
+
+.table-row {
+  display: grid;
+  grid-template-columns: 60px 1fr 1fr 2fr; /* 4 columns: index, criteria, size, complexity */
+  padding: 20px;
+  border-bottom: 1px solid #dddade;
+  font-size: 14px;
+  letter-spacing: 0.56px;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.table-header-row {
+  padding: 20px;
+  background-color: #ffffe4;
+  font-weight: bold;
+}
+
+.header-cell {
+  font-weight: 700;
+  padding: 0 5px;
+}
+
+.index-column {
+  font-weight: 600;
+  padding: 0 5px;
+}
+
+.criteria-column,
+.size-column,
+.complexity-column {
+  padding: 0 5px;
+}
+
+.complexity-column {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.complexity-row {
+  display: flex;
+  align-items: flex-end;
+  gap: 5px;
+}
+
+.base {
+  font-size: 14px;
+  line-height: 1;
+}
+
+.exponent {
+  font-size: 6px;
+  line-height: 16px;
+  letter-spacing: 0.24px;
+}
+
+.note {
+  font-size: 14px;
+  letter-spacing: 0.56px;
+}
+
+@media (max-width: 991px) {
+  .table-row,
+  .table-header-row {
+    grid-template-columns: 40px 1fr 1fr 1fr;
+    font-size: 13px;
+  }
+}

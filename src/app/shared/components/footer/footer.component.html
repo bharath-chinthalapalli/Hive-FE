@@ -1,0 +1,137 @@
+<section class="overflow-hidden">
+    <div
+        class="bg-[#FAAD17] block xl:flex xl:flex-row flex-col  gap-4 items-center justify-between 3xs:px-16 px-8 py-8">
+        <div class="flex flex-col gap-2 text-[#231F20]">
+            <div
+                class="5xs:text-xl 4xs:text-xl 3xs:text-xl 2xs:text-2xl xs:text-2xl md:text-2xl  sm:text-2xl lg:text-2xl xl:text-3xl 2xl:text-4xl 3xl:text-4xl 4xl:text-4xl 5xl:text-4xl 6xl:text-4xl 7xl:text-5xl 8xl:text-5xl font-bold">
+                Need Help or Have a Question?
+            </div>
+            <div
+                class="5xs:text-xs 4xs:text-xs 3xs:text-xs 2xs:text-sm xs:text-sm md:text-sm  sm:text-sm lg:text-smsm xl:text-base 2xl:text-base 3xl:text-base 4xl:text-base 5xl:text-lg 6xl:text-lg 7xl:text-2xl 8xl:text-2xl font-normal">
+                Our experts are here to guide you — whether it's a technical issue or just a quick query.
+            </div>
+        </div>
+        <div class="2xs:flex block items-center 2xs:flex-row flex-col gap-6 xl:mt-0 mt-4">
+            <div>
+                <button (click)="navToContact()"
+                    class=" border text-white bg-[#231F20] xs:w-fit w-full border-[#231F20]  8xl:px-14 px-6 8xl:py-6 py-4 rounded-[4px] font-medium  hover:bg-[#231F20] ">
+                    <div
+                        class=" 5xs:text-xs 4xs:text-xs 3xs:text-xs 2xs:text-sm xs:text-sm md:text-sm  sm:text-sm lg:text-sm xl:text-base 2xl:text-base 3xl:text-base 4xl:text-base 5xl:text-lg 6xl:text-lg 7xl:text-2xl 8xl:text-2xl">
+                        Contact Support
+                    </div>
+                </button>
+            </div>
+            <div class="2xs:mt-0 mt-4">
+                <button
+                    class="2xs:ml-2 ml-0  text-[#231F20] bg-white xs:w-fit w-full border-[#231F20]  8xl:px-14 px-6 8xl:py-6 py-4 rounded-[4px] font-medium hover:bg-white">
+                    <div routerLink="/"
+                        class="5xs:text-xs 4xs:text-xs 3xs:text-xs 2xs:text-sm xs:text-sm md:text-sm  sm:text-sm lg:text-sm xl:text-base 2xl:text-base 3xl:text-base 4xl:text-base 5xl:text-lg 6xl:text-lg 7xl:text-2xl 8xl:text-2xl">
+                        Browse FAQs
+                    </div>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="flex flex-wrap items-start justify-between 3xs:px-16 px-10 py-8 bg-[#231F20]">
+        <div
+            class="5xs:block 4xs:block 3xs:flex 2xs:flex xs:block sm:block md:block lg:block xl:block 2xl:block 3xl:block   justify-between items-center w-full xs:w-fit ">
+            <div routerLink="/">
+                <img src="footer_logo_new.svg" alt="footer_logo_new" class="">
+            </div>
+            <a href="tel:+966118274157" target="_blank"
+                class="flex items-center gap-2 text-sm font-normal text-white text-nowrap 5xs:mt-4 4xs:mt-8 3xs:mt-0 2xs:mt-0 xs:mt-8">
+                <img src="phone.svg" alt="phone"
+                    class="2xl:w-[20px] 3xl:w-[20px] 4xl:w-[24px] 5xl:w-[24px] 6xl:w-[26px] 37xl:w-[26px] 8xl:w-[28px]" />
+                <span
+                    class="5xs:text-xs 4xs:text-xs 3xs:text-xs 2xs:text-sm xs:text-sm md:text-sm  sm:text-sm lg:text-sm xl:text-base 2xl:text-base 3xl:text-base 4xl:text-base 5xl:text-lg 6xl:text-lg 7xl:text-2xl 8xl:text-2xl">+966
+                    11 827 4157</span>
+            </a>
+        </div>
+
+        @for (item of footerArray(); track item) {
+        <div class="flex flex-col gap-2 text-white xs:mt-0 mt-4">
+            <div
+                class="5xs:text-sm 4xs:text-sm 3xs:text-sm 2xs:text-base xs:text-base md:text-base  sm:text-base lg:text-base xl:text-lg 2xl:text-lg 3xl:text-lg 4xl:text-lg 5xl:text-xl 6xl:text-xl 7xl:text-2xl 8xl:text-2xl font-medium items-end  place-content-end">
+                {{item.title}}
+            </div>
+            @for (links of item.navLinks; track links) {
+            <div class="flex flex-col gap-2">
+                <a class=" font-light cursor-pointer hover:underline underline-offset-4 5xs:text-xs 4xs:text-xs 3xs:text-xs 2xs:text-sm xs:text-sm md:text-sm  sm:text-sm lg:text-sm xl:text-base 2xl:text-base 3xl:text-base 4xl:text-base 5xl:text-lg 6xl:text-lg 7xl:text-xl 8xl:text-xl"
+                    [routerLink]="links.path">
+                    {{links.link}}
+                </a>
+            </div>
+            }
+        </div>
+        }
+
+    </div>
+
+    <!-- <div class="py-1 flex-wrap 4xs:flex block items-center justify-between  gap-4  w-full bg-white 3xs:px-16 px-10">
+        <div class="lg:flex-grow -ml-4">
+            <div>
+                <img src="footer_logo_icon.svg" alt="footer_saudhi_logo" class="rendering-pixelated" loading="lazy" decoding="async">
+            </div>
+        </div>
+        <div class="sm:flex block items-center gap-8 flex-row">
+            <div class="flex flex-row gap-4 text-sm font-normal items-center  4xs:mt-0 mt-4 text-[#231F20]">
+               <a
+                   class="5xs:text-xs 4xs:text-xs 3xs:text-xs 2xs:text-sm xs:text-sm md:text-sm  sm:text-sm lg:text-sm xl:text-base 2xl:text-base 3xl:text-base 4xl:text-base 5xl:text-lg 6xl:text-lg 7xl:text-xl 8xl:text-xl">
+                   All rights reserved to HIVE © 2025
+               </a>
+           </div>
+   
+           <div
+               class="4xs:flex block gap-4 text-sm font-normal items-center justify-center text-[#231F20]  4xs:mt-0 mt-4 ">
+               <div>
+                   <a
+                       class=" cursor-pointer hover:underline underline-offset-4 5xs:text-xs 4xs:text-xs 3xs:text-xs 2xs:text-sm xs:text-sm md:text-sm  sm:text-sm lg:text-sm xl:text-base 2xl:text-base 3xl:text-base 4xl:text-base 5xl:text-lg 6xl:text-lg 7xl:text-xl 8xl:text-xl">
+                       Terms of Use
+                   </a>
+               </div>
+               <div>
+                   <a
+                       class=" cursor-pointer hover:underline underline-offset-4 5xs:text-xs 4xs:text-xs 3xs:text-xs 2xs:text-sm xs:text-sm md:text-sm  sm:text-sm lg:text-sm xl:text-base 2xl:text-base 3xl:text-base 4xl:text-base 5xl:text-lg 6xl:text-lg 7xl:text-xl 8xl:text-xl">
+                       Disclaimer
+                   </a>
+               </div>
+               <div>
+                   <a
+                       class=" cursor-pointer hover:underline underline-offset-4 5xs:text-xs 4xs:text-xs 3xs:text-xs 2xs:text-sm xs:text-sm md:text-sm  sm:text-sm lg:text-sm xl:text-base 2xl:text-base 3xl:text-base 4xl:text-base 5xl:text-lg 6xl:text-lg 7xl:text-xl 8xl:text-xl">
+                       Privacy Notice
+                   </a>
+               </div>
+           </div>
+        </div>
+    </div> -->
+
+    <div class="py-4 flex-wrap 4xs:flex block items-center justify-between  gap-4  w-full bg-white 3xs:px-16 px-10">
+        <div class="flex flex-row gap-4 text-sm font-normal items-center  4xs:mt-0 mt-4 text-[#231F20]">
+            <a routerLink="/"
+                class="5xs:text-xs 4xs:text-xs 3xs:text-xs 2xs:text-sm xs:text-sm md:text-sm  sm:text-sm lg:text-sm xl:text-sm 2xl:text-sm 3xl:text-sm 4xl:text-base 5xl:text-lg 6xl:text-lg 7xl:text-xl 8xl:text-xl">
+                All rights reserved to HIVE © 2025
+            </a>
+        </div>
+        <div
+            class="4xs:flex block gap-4 text-sm font-normal items-center justify-center text-[#231F20]  4xs:mt-0 mt-4 ">
+            <div>
+                <a routerLink="/"
+                    class=" cursor-pointer hover:underline underline-offset-4 5xs:text-xs 4xs:text-xs 3xs:text-xs 2xs:text-sm xs:text-sm md:text-sm  sm:text-sm lg:text-sm xl:text-sm 2xl:text-sm 3xl:text-sm 4xl:text-base 5xl:text-lg 6xl:text-lg 7xl:text-xl 8xl:text-xl">
+                    Terms of Use
+                </a>
+            </div>
+            <div>
+                <a routerLink="/"
+                    class=" cursor-pointer hover:underline underline-offset-4 5xs:text-xs 4xs:text-xs 3xs:text-xs 2xs:text-sm xs:text-sm md:text-sm  sm:text-sm lg:text-sm xl:text-sm 2xl:text-sm 3xl:text-sm 4xl:text-base 5xl:text-lg 6xl:text-lg 7xl:text-xl 8xl:text-xl">
+                    Disclaimer
+                </a>
+            </div>
+            <div>
+                <a routerLink="/"
+                    class=" cursor-pointer hover:underline underline-offset-4 5xs:text-xs 4xs:text-xs 3xs:text-xs 2xs:text-sm xs:text-sm md:text-sm  sm:text-sm lg:text-sm xl:text-sm 2xl:text-sm 3xl:text-sm 4xl:text-base 5xl:text-lg 6xl:text-lg 7xl:text-xl 8xl:text-xl">
+                    Privacy Notice
+                </a>
+            </div>
+        </div>
+    </div>
+</section>

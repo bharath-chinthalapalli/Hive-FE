@@ -1,0 +1,42 @@
+.three-d-section {
+    margin-top: 32px;
+    width: 100%;
+    font-family: Inter, -apple-system, Roboto, Helvetica, sans-serif;
+    font-size: 18px;
+    color: #231f20;
+  }
+
+  .description,
+  .figure-caption,
+  .implementation-note,
+  .technical-detail,
+  .additional-info,
+  .considerations,
+  .conclusion {
+    line-height: 27px;
+    margin: 18px 0;
+  }
+
+  .diagram-image {
+    aspect-ratio: 1.76;
+    object-fit: contain;
+    width: 100%;
+    max-width: 1280px;
+    margin: 18px 0;
+  }
+
+  @media (max-width: 991px) {
+    .three-d-section {
+      max-width: 100%;
+    }
+
+    .description,
+    .figure-caption,
+    .implementation-note,
+    .technical-detail,
+    .additional-info,
+    .considerations,
+    .conclusion {
+      max-width: 100%;
+    }
+  }

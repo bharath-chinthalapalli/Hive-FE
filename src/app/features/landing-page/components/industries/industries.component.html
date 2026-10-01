@@ -1,0 +1,37 @@
+<section class="3xs:px-16 px-10 py-8 flex flex-col gap-7 bg-[#FFFFF6]">
+    <div class="m-auto text-center flex flex-col gap-2">
+        <div class="font-bold 5xs:text-xl 4xs:text-2xl 3xs:text-2xl 2xs:text-2xl xs:text-2xl sm:text-2xl lg:text-3xl xl:text-3xl 2xl:text-4xl 3xl:text-4xl 4xl:text-4xl 5xl:text-4xl 6xl:text-5xl 7xl:text-5xl 8xl:text-6xl text-[#FAAD17] ">Industries
+            <span class="text-[#231F20]">
+                We Serve
+            </span>
+        </div>
+        <div class=" 5xs:text-xs 4xs:text-xs 3xs:text-xs 2xs:text-xs xs:text-sm sm:text-sm md:text-base lg:text-base xl:text-base 2xl:text-lg 3xl:text-lg 4xl:text-xl 5xl:text-xl 6xl:text-2xl 7xl:text-2xl 8xl:text-3xl text-[#231F20] font-normal ">
+            Empowering critical sectors with unrivaled security
+        </div>
+    </div>
+
+    <div class="grid md:grid-cols-5 sm:grid-cols-4 xs:grid-cols-3 2xs:grid-cols-2  3xs:grid-cols-1 gap-7">
+        @for (item of industirsCards(); track item) {
+        <div [routerLink]="[item.path]"
+            class=" group hover:bg-[#FAAD17] transition-all duration-300 border cursor-pointer border-gray-300 rounded-md flex flex-col items-center justify-center text-center px-4 py-6 min-h-[180px] 3xl:min-h-[240px] 4xl:min-h-[280px] 5xl:min-h-[300px] 6xl:min-h-[340px] 7xl:min-h-[340px] 8xl:min-h-[360px]">
+            <img [src]="item.image_gray"
+                class="group-hover:hidden 3xl:w-20 3xl:h-20 4xl:w-20 4xl:h-20 5xl:w-20 5xl:h-20 6xl:w-20 6xl:h-20 7xl:w-20 7xl:h-20 8xl:w-32 8xl:h-32 object-contain transition-all duration-300"
+                alt="black icon" />
+            <img [src]="item.image_black"
+                class="hidden group-hover:block 3xl:w-20 3xl:h-20 4xl:w-20 4xl:h-20 5xl:w-20 5xl:h-20 6xl:w-20 6xl:h-20 7xl:w-20 7xl:h-20 8xl:w-32 8xl:h-32 object-contain transition-all duration-300"
+                alt="white icon" />
+            <div
+                class=" text-[#231F20] 5xs:text-xl 4xs:text-xl 3xs:text-xl 2xs:text-xl xs:text-xl sm:text-xl md:text-lg lg:text-lg xl:text-xl 2xl:text-xl 3xl:text-xl 4xl:text-xl 5xl:text-xl 6xl:text-2xl 7xl:text-2xl 8xl:text-3xl font-bold mt-4 line-clamp-2 min-h-[60px]">
+                {{item.title}}</div>
+        </div>
+        }
+    </div>
+    <div class="!m-auto text-center !mt-0">
+        <button (click)="navToBenefitsHive()"
+            class="bg-[#231F20] rounded-[4px] text-white px-8 py-4 w-fit hover:bg-[#FAAD17] hover:text-black font-medium">
+            <div class="5xs:text-xs 4xs:text-xs 3xs:text-xs 2xs:text-sm xs:text-sm md:text-sm  sm:text-sm lg:text-smsm xl:text-base 2xl:text-base 3xl:text-base 4xl:text-base 5xl:text-lg 6xl:text-lg 7xl:text-2xl 8xl:text-2xl">
+                See All Industries
+            </div>
+        </button>
+    </div>
+</section>

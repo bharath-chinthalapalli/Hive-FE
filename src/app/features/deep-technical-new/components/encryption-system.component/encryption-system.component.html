@@ -1,0 +1,66 @@
+<article class="encryption-system">
+    <section class="content-section">
+     
+
+      <p class="analysis-text">
+        With the above design criteria the strength of the systems are analyzed as follows:
+      </p>
+
+      <p class="calculation-text">
+        Size of data that can be encrypted before the encryption path is repeated:
+        Assuming each path is capable of encrypting one Hexadecimal:
+        <br />
+        o 9×109,632 Hexadecimal →9×109,632 x 16 = 1×109,634 bits = 1.8×109,615 Exabyte
+        of information before the path repeats itself (1 Exabyte = 1018 Byte)
+      </p>
+
+      <p class="calculation-text">
+        In order to compute all possible paths of the map using Brute-Force attack using
+        the most powerful available supercomputer nowadays capable of executing 33.86×1015
+        Floating-Point Operations Per Second (FLOPS) and assuming a path is calculated per
+        each FLOPS the time needed is as the following:
+        <br />
+        o 9×109,632 /33.86×1015 = 2.7×109,616 seconds = 8.5×109,608 years, which is
+        computationally unfeasible
+      </p>
+
+      <p class="calculation-text">
+        Using similar calculation, in order to break the encryption key using Brute-Force
+        attack using the most powerful available supercomputer nowadays assuming a possible
+        key combination is calculated per each FLOPS, the time needed to try all combinations
+        is the following:
+        <br />
+        o 2×10288 / 33.86×1015 = 6×10271 seconds = 2×10264 years, which is computationally
+        unfeasible
+      </p>
+
+      <p class="calculation-text">
+        The memory footprint of the design: 32,000 × ((16 × 8) + 16) = 4,608,000 bits = 576Kbyte.
+        <br /><br />
+        Figure 4 below illustrates how much time it would take before encryption path is
+        repeated against different map sizes. We use log scale for the time length on the y-axis.
+      </p>
+
+      <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/27a4ebcce5a97e5d0ad93a943696b9aafc01fcbd?placeholderIfAbsent=true&apiKey=80db7a94ff96497195a901986eba8c45" alt="Encryption path repetition time vs map size" class="diagram-image" />
+
+      <div class="figure-section">
+        <p class="figure-text">
+          Figure 5 shows how the complexity of the encryption key (i.e., the number of
+          possible key combinations) increases with the key size.
+        </p>
+        <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/c6f7fb1ae2e56fd5a4995dd781d824393056741f?placeholderIfAbsent=true&apiKey=80db7a94ff96497195a901986eba8c45" alt="Encryption key complexity vs key size" class="diagram-image" />
+      </div>
+
+      <div class="figure-section">
+        <p class="figure-text">
+          And Figure 6 shows how Key complexity increases with the encryption map size for
+          a fixed Key Size of 64 cells.
+        </p>
+        <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/ad87f04c2108c0a91858784947f3ad2fa774e8ea?placeholderIfAbsent=true&apiKey=80db7a94ff96497195a901986eba8c45" alt="Key complexity vs encryption map size" class="diagram-image" />
+      </div>
+
+     
+    </section>
+
+  
+  </article>

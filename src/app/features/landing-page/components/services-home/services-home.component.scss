@@ -1,0 +1,248 @@
+.services {
+  padding: 64px 50px;
+  margin: 0 auto;
+}
+
+.section-title {
+  color: #231F20;
+  font-size: 36px;
+  font-family: Montserrat, sans-serif;
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.services-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-top: 2%;
+}
+
+.services-grid {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  gap: 24px;
+  cursor: grab;
+  padding: 20px 10px;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  flex: 1;
+  scroll-snap-type: x mandatory;
+}
+
+.services-grid::-webkit-scrollbar {
+  display: none;
+}
+
+.nav-button {
+  position: relative;
+  width: 56px;
+  height: 56px;
+  border-radius: 16px;
+  background: linear-gradient(145deg, #ffffff, #f5f5f5);
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  z-index: 1;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 
+    5px 5px 10px rgba(0, 0, 0, 0.05),
+    -5px -5px 10px rgba(255, 255, 255, 0.8);
+
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 16px;
+    padding: 2px;
+    background: linear-gradient(145deg, #FAAD17, #FFD700);
+    -webkit-mask: 
+      linear-gradient(#fff 0 0) content-box, 
+      linear-gradient(#fff 0 0);
+    mask: 
+      linear-gradient(#fff 0 0) content-box, 
+      linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+  }
+
+  span {
+    color: #231F20;
+    font-size: 22px;
+    font-weight: 500;
+    transition: all 0.4s ease;
+    position: relative;
+    z-index: 1;
+  }
+
+  &:hover {
+    transform: translateY(-2px) scale(1.02);
+    box-shadow: 
+      8px 8px 16px rgba(0, 0, 0, 0.08),
+      -8px -8px 16px rgba(255, 255, 255, 0.9);
+
+    &::before {
+      opacity: 1;
+    }
+
+    span {
+      color: #FAAD17;
+    }
+  }
+
+  &:active {
+    transform: translateY(0) scale(0.98);
+    box-shadow: 
+      3px 3px 6px rgba(0, 0, 0, 0.1),
+      -3px -3px 6px rgba(255, 255, 255, 0.7);
+  }
+
+  &.left {
+    margin-right: -16px;
+  }
+
+  &.right {
+    margin-left: -16px;
+  }
+}
+
+.service-card {
+  background-color: #FFFFE4;
+  height: fit-content;
+  border-radius: 12px;
+  flex: 0 0 320px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  scroll-snap-align: start;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  }
+}
+
+.service-number {
+  width: 48px;
+  height: 48px;
+  background-color: #FAAD17;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.number {
+  color: #FFFFE4;
+  font-family: Montserrat, sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.service-content {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.service-title {
+  color: #FAAD17;
+  font-size: 20px;
+  font-family: Montserrat, sans-serif;
+  font-weight: 700;
+  word-wrap: break-word;
+  overflow-wrap: anywhere;
+  white-space: normal;
+}
+
+.service-description {
+  color: #231F20;
+  font-size: 16px;
+  font-family: Open Sans, sans-serif;
+  font-weight: 400;
+  line-height: 24px;
+  word-wrap: break-word;
+  overflow-wrap: anywhere;
+  white-space: normal;
+}
+
+@media (max-width: 991px) {
+  .services {
+    padding: 40px 20px;
+  }
+
+  .service-card {
+    // padding: 30px;
+    flex: 0 0 320px;
+  }
+
+  .nav-button {
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+
+    &::before {
+      border-radius: 12px;
+    }
+
+    span {
+      font-size: 20px;
+    }
+  }
+}
+
+.service-card:hover {
+  background-color: #FAAD17;
+  color: #231F20;
+}
+
+.service-card:hover .service-title,
+.service-card:hover .service-description {
+  color: #231F20;
+}
+
+.service-card:hover .service-number {
+  background-color: #FFFFFF;
+}
+
+.service-card:hover .number {
+  color: #000000;
+}
+
+
+::ng-deep .slick-dots li button:before {
+  margin-top: 14px;
+  font-size: 14px;
+  color: gray;       // default color
+  opacity: 1;         // make dots fully visible
+}
+
+::ng-deep .slick-dots li.slick-active button:before {
+  color: #FAAD17;     // active dot color (orange)
+}
+
+
+// ::ng-deep .slick-dots li button:before {
+//   font-size: 14px;
+//   color: black;   
+//   opacity: 1;      
+// }
+
+// ::ng-deep .slick-dots li.slick-active button:before {
+//   color: #FAAD17;   
+// }
+// ::ng-deep .slick-dots {
+//   bottom: -25px;
+//   text-align: center;
+// }

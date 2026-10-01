@@ -1,0 +1,25 @@
+<section class="attack-analysis">
+    <h2 class="section-title">Table 2 shows the resistance to modern stream cipher attacks of the invention:</h2>
+
+    <div class="analysis-table">
+      <header class="table-header">
+        <div class="header-row">
+          <h3 class="header-cell">#</h3>
+          <h3 class="header-cell">Attack</h3>
+          <h3 class="header-cell">Description</h3>
+          <h3 class="header-cell">Impact on Hive Encryption</h3>
+        </div>
+      </header>
+
+      <div class="table-body">
+        <ng-container *ngFor="let attack of attacks">
+          <div class="table-row">
+            <div class="cell id-cell">{{attack.id}}</div>
+            <div class="cell name-cell">{{attack.name}}</div>
+            <div class="cell description-cell">{{attack.description}}</div>
+            <div class="cell impact-cell">{{attack.impact}}</div>
+          </div>
+        </ng-container>
+      </div>
+    </div>
+  </section>

@@ -1,0 +1,12 @@
+.landing-page {
+  background-color: #F5F5F5;
+  overflow: hidden;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+} 
+
+
+::ng-deep .grecaptcha-badge {
+  visibility: hidden !important;
+}

@@ -1,0 +1,212 @@
+<header class="fixed top-0 z-20 w-full bg-white/60 backdrop-blur-md shadow-lg py-1">
+    <mat-toolbar class="flex flex-row items-center justify-between w-full ">
+        <div class="3xs:ml-[48px] ml-4 headerMenu gap-24">
+            <div routerLink="/" class="">
+                <img src="logo_new_2.svg" alt="logo" class="w-full bg-cover cursor-pointer " routerLink="/">
+            </div>
+            <nav class="nav-links font-medium text-[#231F20] ">
+                <button mat-button routerLink="/" routerLinkActive="nav-link--active"
+                    [routerLinkActiveOptions]="{ exact: true }" class="tracking-wide nav-link">Home
+                </button>
+                <button mat-button routerLink="/about" routerLinkActive="nav-link--active"
+                    [routerLinkActiveOptions]="{ exact: true }" class=" tracking-wide nav-link">About Us
+                </button>
+
+                <!-- Services Dropdown Wrapper -->
+                <!-- <div class="relative group">
+                    <div class="relative group" (mouseenter)="hoveredItem = 'services'" (mouseleave)="hoveredItem = ''">
+                        <button routerLink="/services" routerLinkActive="nav-link--active"
+                            [routerLinkActiveOptions]="{ exact: false }"
+                            class="tracking-wide nav-link  flex items-center gap-1">
+                            Services
+                            <mat-icon class="!text-2xl -mt-2">expand_more</mat-icon>
+                        </button>
+                        <div class="absolute left-0 top-full w-64 bg-white shadow-lg rounded-b-[4px] 
+                        opacity-0 invisible group-hover:opacity-100 group-hover:visible
+                        transition duration-200 z-50">
+                            <ng-container *ngFor="let item of optionMenu();">
+                                <a class="menu-item" (click)="navToContent(item)"
+                                    (mouseenter)="hoveredItem = item.option" (mouseleave)="hoveredItem = ''"
+                                    [ngClass]="{ 'active-item': hoveredItem === item.option }">
+                                    <div class="optionText">
+                                        <span class="icon !mx-1">
+                                            <img *ngIf="hoveredItem === item.option" src="arrow.svg" alt="arrow"
+                                                class="w-4 h-4">
+                                            <img *ngIf="hoveredItem !== item.option" src="dash.svg" alt="dash"
+                                                class="w-4 h-4">
+                                        </span>
+                                        {{ item.option }}
+                                    </div>
+                                </a>
+                            </ng-container>
+                        </div>
+                    </div>
+                </div> -->
+
+                <div class="relative" (mouseenter)="hoveredMenu = 'services'" (mouseleave)="hoveredMenu = ''">
+                    <!-- Services Button -->
+                    <button routerLink="/services" class="tracking-wide nav-link flex items-center gap-1">
+                        Services
+                        <mat-icon class="!text-2xl -mt-2">expand_more</mat-icon>
+                    </button>
+                    <!-- Dropdown -->
+                    <div class="absolute left-0 top-full w-64 bg-white shadow-lg rounded-b-[4px]
+                                transition duration-200 z-50" [ngClass]="{
+                                'opacity-100 visible': hoveredMenu === 'services',
+                                'opacity-0 invisible': hoveredMenu !== 'services'
+                        }">
+                        <ng-container *ngFor="let item of optionMenu();">
+                            <a class="menu-item" (click)="navToContent(item); hoveredMenu = ''; hoveredItem = ''"
+                                (mouseenter)="hoveredItem = item.option" (mouseleave)="hoveredItem = ''"
+                                [ngClass]="{ 'active-item': hoveredItem === item.option }">
+                                <div class="optionText">
+                                    <span class="icon !mx-1">
+                                        <img *ngIf="hoveredItem === item.option" src="arrow.svg" alt="arrow"
+                                            class="w-4 h-4">
+                                        <img *ngIf="hoveredItem !== item.option" src="dash.svg" alt="dash"
+                                            class="w-4 h-4">
+                                    </span>
+                                    {{ item.option }}
+                                </div>
+                            </a>
+                        </ng-container>
+                    </div>
+                </div>
+
+
+                <!-- Deep Techincal Dropdown Wrapper -->
+                <!-- <div class="relative group">
+                    <div class="relative group" (mouseenter)="hoveredItem = 'deep-techincal'"
+                        (mouseleave)="hoveredItem = ''">
+                        <button routerLink="deep-technical" routerLinkActive="nav-link--active"
+                            [routerLinkActiveOptions]="{ exact: false }"
+                            class="tracking-wide nav-link flex items-center gap-1">
+                            Deep Technical
+                            <mat-icon class="!text-2xl -mt-2">expand_more</mat-icon>
+                        </button>
+                        <div class="absolute left-0 top-full w-[280px] min-w-[200px] bg-white rounded-b-[4px] p-0 shadow-[0_4px_12px_rgba(0,0,0,0.1)]
+                        opacity-0 invisible group-hover:opacity-100 group-hover:visible
+                        transition duration-200 z-50">
+                            <ng-container *ngFor="let item of deepTechincalOptionMenu();">
+                                <a class="menu-item" (click)="navToContent(item)"
+                                    (mouseenter)="hoveredItem = item.option" (mouseleave)="hoveredItem = ''"
+                                    [ngClass]="{ 'active-item': hoveredItem === item.option }">
+                                    <div class="optionText">
+                                        <span class="icon !mx-1">
+                                            <img *ngIf="hoveredItem === item.option" src="arrow.svg" alt="arrow"
+                                                class="w-4 h-4">
+                                            <img *ngIf="hoveredItem !== item.option" src="dash.svg" alt="dash"
+                                                class="w-4 h-4">
+                                        </span>
+                                        {{ item.option }}
+                                    </div>
+                                </a>
+                            </ng-container>
+                        </div>
+                    </div>
+                </div> -->
+
+
+
+                <div class="relative" (mouseenter)="hoveredMenu = 'deep_technical'" (mouseleave)="hoveredMenu = ''">
+                    <!-- Services Button -->
+                    <button routerLink="/services" class="tracking-wide nav-link flex items-center gap-1">
+                        Deep Technical
+                        <mat-icon class="!text-2xl -mt-2">expand_more</mat-icon>
+                    </button>
+                    <!-- Dropdown -->
+                    <div class="absolute left-0 top-full w-72 bg-white shadow-lg rounded-b-[4px]
+                                transition duration-200 z-50" [ngClass]="{
+                                'opacity-100 visible': hoveredMenu === 'deep_technical',
+                                'opacity-0 invisible': hoveredMenu !== 'deep_technical'
+                        }">
+                        <ng-container *ngFor="let item of deepTechincalOptionMenu();">
+                            <a class="menu-item" (click)="navToContent(item); hoveredMenu = ''; hoveredItem = ''"
+                                (mouseenter)="hoveredItem = item.option" (mouseleave)="hoveredItem = ''"
+                                [ngClass]="{ 'active-item': hoveredItem === item.option }">
+                                <div class="optionText">
+                                    <span class="icon !mx-1">
+                                        <img *ngIf="hoveredItem === item.option" src="arrow.svg" alt="arrow"
+                                            class="w-4 h-4">
+                                        <img *ngIf="hoveredItem !== item.option" src="dash.svg" alt="dash"
+                                            class="w-4 h-4">
+                                    </span>
+                                    {{ item.option }}
+                                </div>
+                            </a>
+                        </ng-container>
+                    </div>
+                </div>
+
+                <button mat-button routerLink="/demo" routerLinkActive="nav-link--active"
+                    [routerLinkActiveOptions]="{ exact: true }" class=" tracking-wide nav-link">Try Demo
+                </button>
+            </nav>
+        </div>
+        <div class=" 3xs:mr-[48px] mr-4 contact_us">
+            <button routerLink="/contact" routerLinkActive="contact-active"
+                class="bg-[#231F20] rounded-[4px] text-white px-6 py-2 w-fit text-sm   font-medium">
+                Contact Us
+            </button>
+        </div>
+
+        <div class="mobileMenu w-full">
+            <div routerLink="/" class="3xs:ml-[48px] ml-4 ">
+                <img src="logo_new_2.svg" alt="logo" class="w-full bg-cover cursor-pointer " routerLink="/">
+            </div>
+            <!-- Hamburger Menu (Only on small screens) -->
+            <div class="flex justify-end right-0 3xs:mr-[48px] mr-4 ">
+                <button (click)="isMobileMenuOpen = true" class="optionMenu">
+                    <mat-icon>menu</mat-icon>
+                </button>
+
+            </div>
+        </div>
+    </mat-toolbar>
+</header>
+
+<!-- Popup Side Menu -->
+<div *ngIf="isMobileMenuOpen" class="fixed inset-0 bg-black bg-opacity-50 z-50 flex justify-end">
+    <div class="w-3/4 bg-white h-full shadow-lg p-5 flex flex-col gap-4 overflow-y-auto">
+        <button (click)="isMobileMenuOpen = false" class="self-end 3xs:mr-[48px] mr-4 ">
+            <mat-icon>close</mat-icon>
+        </button>
+
+        <a routerLink="/" (click)="isMobileMenuOpen = false">Home</a>
+        <a routerLink="/about" (click)="isMobileMenuOpen = false">About Us</a>
+
+        <!-- Services with Submenu -->
+        <button routerLink="/services" class="flex justify-between items-center mr-[48px] ">
+            Services
+            <mat-icon (click)="mobileServicesOpen = !mobileServicesOpen">{{ mobileServicesOpen ? 'expand_less' :
+                'expand_more' }}</mat-icon>
+        </button>
+        <div *ngIf="mobileServicesOpen" class="pl-4 flex flex-col gap-2 text-sm text-gray-700">
+            <a (click)="navToContent(serviceItem)" *ngFor="let serviceItem of optionMenu()" class="hover:underline">
+                {{ serviceItem.option }}
+            </a>
+        </div>
+
+        <!-- Deep Technical with Submenu -->
+        <button (click)="mobileDeepTechOpen = !mobileDeepTechOpen" class="flex justify-between mr-[48px] items-center">
+            Deep Technical
+            <mat-icon>{{ mobileDeepTechOpen ? 'expand_less' : 'expand_more' }}</mat-icon>
+        </button>
+        <div *ngIf="mobileDeepTechOpen" class="pl-4 flex flex-col gap-2 text-sm text-gray-700">
+            <a (click)="navToContent(deepItem)" *ngFor="let deepItem of deepTechincalOptionMenu()"
+                class="hover:underline">
+                {{ deepItem.option }}
+            </a>
+        </div>
+
+        <a routerLink="/demo" (click)="isMobileMenuOpen = false">Try Demo</a>
+        <a routerLink="/contact" (click)="isMobileMenuOpen = false">Contact Us</a>
+    </div>
+</div>
+
+<div class=" childPart">
+    <router-outlet></router-outlet>
+</div>
+<div>
+    <app-footer></app-footer>
+</div>

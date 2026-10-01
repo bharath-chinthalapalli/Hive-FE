@@ -1,0 +1,164 @@
+<main class="overall-page  ">
+  <div class="w-full bg-[#231F20] text-white  z-10 3xs:pl-16 pl-8 py-4">
+    <nav class="tracking-wider !font-normal ">
+      <a routerLink="/" class="hover:underline underline-offset-4 cursor-pointer ">Home</a>
+      /
+      <a routerLink="/services" class="hover:underline underline-offset-4 cursor-pointer">Services</a>
+      /
+      <span class="text-[#A7A5A6]">See All Industries</span>
+    </nav>
+  </div>
+
+  <div class="3xs:px-16 px-6 my-10">
+    <div class="m-auto flex justify-center flex-col gap-2 text-center">
+      <div
+        class="font-bold 5xs:text-xl 4xs:text-2xl 3xs:text-2xl 2xs:text-2xl xs:text-2xl sm:text-2xl lg:text-3xl xl:text-3xl 2xl:text-4xl 3xl:text-4xl 4xl:text-4xl 5xl:text-4xl 6xl:text-5xl 7xl:text-5xl 8xl:text-6xl text-[#FAAD17]">
+        Industries
+        <span class="text-[#231F20]">
+          We Serve
+        </span>
+      </div>
+      <div
+        class="5xs:text-xs 4xs:text-xs 3xs:text-xs 2xs:text-xs xs:text-sm sm:text-sm md:text-base lg:text-base xl:text-base 2xl:text-lg 3xl:text-lg 4xl:text-xl 5xl:text-xl 6xl:text-2xl 7xl:text-2xl 8xl:text-3xl text-[#231F20] font-normal">
+        Empowering Critical Sectors with Unrivaled Security.</div>
+    </div>
+    <!--show all cards from 1152 px -->
+    <div class="xl:hidden grid xl:grid-cols-5 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 xs:grid-cols-1 gap-4 my-6">
+      @for (item of allInductriesListNew(); track item) {
+      <div (click)="navToIndustries(item.type)"
+        class="group cursor-pointer border-none border-gray-300 rounded-md flex flex-col justify-center items-center text-center gap-2 p-4 hover:bg-[#FAAD17] transition-all duration-300 
+              min-h-[180px] 3xl:min-h-[240px] 4xl:min-h-[280px] 5xl:min-h-[300px] 6xl:min-h-[340px] 7xl:min-h-[340px] 8xl:min-h-[360px]">
+
+        <!-- Default icon -->
+        <img [src]="item.image" alt="{{item.title}} icon" class="object-contain transition-all duration-300 group-hover:hidden
+                3xl:w-20 3xl:h-20 4xl:w-20 4xl:h-20 5xl:w-20 5xl:h-20 
+                6xl:w-20 6xl:h-20 7xl:w-20 7xl:h-20 8xl:w-32 8xl:h-32" loading="lazy" decoding="async"/>
+
+        <!-- Hover icon -->
+        <img [src]="item.image_white" alt="{{item.title}} hover icon" class="object-contain transition-all duration-300 hidden group-hover:block
+                3xl:w-20 3xl:h-20 4xl:w-20 4xl:h-20 5xl:w-20 5xl:h-20 
+                6xl:w-20 6xl:h-20 7xl:w-20 7xl:h-20 8xl:w-32 8xl:h-32" loading="lazy" decoding="async"/>
+
+        <!-- Title -->
+        <div
+          class="mt-4 font-bold line-clamp-2 xs:min-h-[0px] min-h-[0px]
+                text-center text-[#231F20]
+               xs:text-xl sm:text-xl md:text-lg lg:text-lg xl:text-lg 2xl:text-lg 3xl:text-lg 4xl:text-lg 5xl:text-lg 6xl:text-lg 7xl:text-2xl 8xl:text-3xl"
+          title="{{item.title}}">
+          {{item.title}}
+        </div>
+
+        <!-- Subtitle -->
+        <div class="text-[#868484] xs:text-xl sm:text-xl md:text-sm lg:text-sm xl:text-sm 2xl:text-sm 3xl:text-sm 4xl:text-sm 5xl:text-sm 6xl:text-sm 7xl:text-lg 8xl:text-2xl text-center font-normal group-hover:text-black line-clamp-2"
+          title="{{item.subTitle}}">
+          {{item.subTitle}}
+        </div>
+
+        <!-- Know More button -->
+        <button class="pt-4">
+          <div class="flex items-center font-normal xs:text-xs sm:text-xs md:text-xs lg:text-xs xl:text-xs 2xl:text-xs 3xl:text-xs 4xl:text-xs 5xl:text-xs 6xl:text-xs 7xl:text-base 8xl:text-lg text-[#FAAD17] group-hover:text-white">
+            Know More
+            <span>
+              <!-- <mat-icon class="text-xs mt-2">arrow_right_alt</mat-icon> -->
+              <img src="arrow.svg" alt="arrow" class="hidden group-hover:inline w-4 ml-1">
+            </span>
+          </div>
+        </button>
+
+      </div>
+      }
+    </div>
+    <!--show first 5 cards from above 1152 px -->
+    <div class="hidden xl:grid xl:grid-cols-5 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 xs:grid-cols-1 gap-4 my-6">
+      @for (item of allInductriesListNew() | slice:0:5; track item) {
+      <div (click)="navToIndustries(item.type)"
+        class="group cursor-pointer border-none border-gray-300 rounded-md flex flex-col justify-center items-center text-center gap-2 p-4 hover:bg-[#FAAD17] transition-all duration-300 
+              min-h-[180px] 3xl:min-h-[240px] 4xl:min-h-[280px] 5xl:min-h-[300px] 6xl:min-h-[340px] 7xl:min-h-[340px] 8xl:min-h-[360px]">
+
+        <!-- Default icon -->
+        <img [src]="item.image" alt="{{item.title}} icon" class="object-contain transition-all duration-300 group-hover:hidden
+                3xl:w-20 3xl:h-20 4xl:w-20 4xl:h-20 5xl:w-20 5xl:h-20 
+                6xl:w-20 6xl:h-20 7xl:w-20 7xl:h-20 8xl:w-32 8xl:h-32" />
+
+        <!-- Hover icon -->
+        <img [src]="item.image_white" alt="{{item.title}} hover icon" class="object-contain transition-all duration-300 hidden group-hover:block
+                3xl:w-20 3xl:h-20 4xl:w-20 4xl:h-20 5xl:w-20 5xl:h-20 
+                6xl:w-20 6xl:h-20 7xl:w-20 7xl:h-20 8xl:w-32 8xl:h-32" />
+
+        <!-- Title -->
+        <div
+          class="mt-4 font-bold line-clamp-2 xs:min-h-[0px] min-h-[0px]
+                text-center text-[#231F20]
+                xs:text-xl sm:text-xl md:text-lg lg:text-lg xl:text-lg 2xl:text-lg 3xl:text-lg 4xl:text-lg 5xl:text-lg 6xl:text-lg 7xl:text-2xl 8xl:text-3xl"
+          title="{{item.title}}">
+          {{item.title}}
+        </div>
+
+        <!-- Subtitle -->
+        <div class="text-[#868484] xs:text-xl sm:text-xl md:text-sm lg:text-sm xl:text-sm 2xl:text-sm 3xl:text-sm 4xl:text-sm 5xl:text-sm 6xl:text-sm 7xl:text-lg 8xl:text-2xl text-center font-normal group-hover:text-black line-clamp-2"
+          title="{{item.subTitle}}">
+          {{item.subTitle}}
+        </div>
+
+        <!-- Know More button -->
+        <button class="pt-6">
+          <div class="flex items-center font-normal xs:text-xs sm:text-xs md:text-xs lg:text-xs xl:text-xs 2xl:text-xs 3xl:text-xs 4xl:text-xs 5xl:text-xs 6xl:text-xs 7xl:text-base 8xl:text-lg text-[#FAAD17] group-hover:text-white">
+            Know More
+            <span>
+              <!-- <mat-icon class="text-xs mt-2">arrow_right_alt</mat-icon> -->
+              <img src="arrow.svg" alt="arrow" class="hidden group-hover:inline w-4 ml-1">
+            </span>
+          </div>
+        </button>
+
+      </div>
+      }
+    </div>
+    <div class=" m-auto hidden xl:grid xl:grid-cols-4 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 xs:grid-cols-1 gap-4 my-6 xl:mx-[107px] 2xl:mx-[124px] 3xl:mx-[134px] 4xl:mx-[140px] 5xl:mx-[157px] 6xl:mx-[166px] 7xl:mx-[180px] 8xl:mx-[244px]">
+      @for (item of allInductriesListNew() | slice:5:9; track item) {
+      <div (click)="navToIndustries(item.type)"
+        class="group cursor-pointer border-none border-gray-300 rounded-md flex flex-col justify-center items-center text-center gap-2 p-4 hover:bg-[#FAAD17] transition-all duration-300 
+              min-h-[180px] 3xl:min-h-[240px] 4xl:min-h-[280px] 5xl:min-h-[300px] 6xl:min-h-[340px] 7xl:min-h-[340px] 8xl:min-h-[360px]">
+
+        <!-- Default icon -->
+        <img [src]="item.image" alt="{{item.title}} icon" class="object-contain transition-all duration-300 group-hover:hidden
+                3xl:w-20 3xl:h-20 4xl:w-20 4xl:h-20 5xl:w-20 5xl:h-20 
+                6xl:w-20 6xl:h-20 7xl:w-20 7xl:h-20 8xl:w-32 8xl:h-32" />
+
+        <!-- Hover icon -->
+        <img [src]="item.image_white" alt="{{item.title}} hover icon" class="object-contain transition-all duration-300 hidden group-hover:block
+                3xl:w-20 3xl:h-20 4xl:w-20 4xl:h-20 5xl:w-20 5xl:h-20 
+                6xl:w-20 6xl:h-20 7xl:w-20 7xl:h-20 8xl:w-32 8xl:h-32" />
+
+        <!-- Title -->
+        <div
+          class="mt-4 font-bold line-clamp-2 xs:min-h-[0px] min-h-[0px]
+                text-center text-[#231F20]
+                xs:text-xl sm:text-xl md:text-lg lg:text-lg xl:text-lg 2xl:text-lg 3xl:text-lg 4xl:text-lg 5xl:text-lg 6xl:text-lg 7xl:text-2xl 8xl:text-3xl"
+          title="{{item.title}}">
+          {{item.title}}
+        </div>
+
+        <!-- Subtitle -->
+        <div class="text-[#868484] xs:text-xl sm:text-xl md:text-sm lg:text-sm xl:text-sm 2xl:text-sm 3xl:text-sm 4xl:text-sm 5xl:text-sm 6xl:text-sm 7xl:text-lg 8xl:text-2xl text-center font-normal group-hover:text-black line-clamp-2"
+          title="{{item.subTitle}}">
+          {{item.subTitle}}
+        </div>
+
+        <!-- Know More button -->
+        <button class="pt-6">
+          <div class="flex items-center font-normal xs:text-xs sm:text-xs md:text-xs lg:text-xs xl:text-xs 2xl:text-xs 3xl:text-xs 4xl:text-xs 5xl:text-xs 6xl:text-xs 7xl:text-base 8xl:text-lg text-[#FAAD17] group-hover:text-white">
+            Know More
+            <span>
+              <!-- <mat-icon class="text-xs mt-2">arrow_right_alt</mat-icon> -->
+              <img src="arrow.svg" alt="arrow" class="hidden group-hover:inline w-4 ml-1">
+            </span>
+          </div>
+        </button>
+
+      </div>
+      }
+    </div>
+
+  </div>
+</main>

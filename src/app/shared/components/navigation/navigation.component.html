@@ -1,0 +1,66 @@
+<header class="navigation-header" [class.mobile-menu-open]="isMobileMenuOpen">
+  <div class="logo-container">
+    <div class="nav-brand">
+      <img src="assets/hivelogo.svg" alt="Logo" class="logo cursor-pointer" routerLink="/" />
+    </div>
+  </div>
+
+  <button class="mobile-menu-toggle" (click)="toggleMobileMenu()" aria-label="Toggle menu">
+    <span class="hamburger-line"></span>
+    <span class="hamburger-line"></span>
+    <span class="hamburger-line"></span>
+  </button>
+
+  <div class="navigation-content" [class.show-mobile-menu]="isMobileMenuOpen">
+    <nav class="nav-links">
+      <ng-container *ngFor="let link of navigationLinks">
+        <!-- Only show dropdown trigger if options exist -->
+        <ng-container *ngIf="link.optionMenu.length > 0; else noDropdown">
+          <a mat-button class="nav-link" [routerLink]="link.path" routerLinkActive="nav-link--active "
+            [routerLinkActiveOptions]="{ exact: true }" (click)="handleLinkClick()">
+            {{ link.label }}
+            <div class="active-indicator" *ngIf="isLinkActive(link.path)"></div>
+          </a>
+          <mat-icon [matMenuTriggerFor]="menuRef" class="cursor-pointer -ml-2">expand_more</mat-icon>
+
+          <mat-menu #menuRef="matMenu" class="custom-dropdown mt-10 ">
+            <button mat-menu-item *ngFor="let item of link.optionMenu" class="menu-item" (click)="navToContent(item)"
+              [ngClass]="{ 'active-item': hoveredItem === item.option }" (mouseenter)="hoveredItem = item.option"
+              (mouseleave)="hoveredItem = ''">
+              <div class="optionText">
+                <!-- Icon container: always takes space -->
+                <span class="icon !mx-1">
+                  <!-- {{ hoveredItem === item.option ? '→' : '–' }} -->
+                  @if (hoveredItem === item.option) {
+                    <img src="arrow.svg" alt="arrow" class="w-full">
+                  }@else{
+                    <img src="dash.svg" alt="dash">
+                  }
+                </span>
+                {{ item.option }}
+              </div>
+            </button>
+          </mat-menu>
+
+
+        </ng-container>
+
+        <!-- If NO dropdown menu -->
+        <ng-template #noDropdown>
+          <a class="nav-link" [routerLink]="link.path" routerLinkActive="nav-link--active"
+            [routerLinkActiveOptions]="{ exact: true }" (click)="handleLinkClick()">
+            {{ link.label }}
+            <!-- Optional indicator -->
+            <!-- <div class="active-indicator" *ngIf="isLinkActive(link.path)"></div> -->
+          </a>
+        </ng-template>
+
+      </ng-container>
+    </nav>
+
+
+    <button class="contact-button" [routerLink]="'/contact'" (click)="handleContactClick()">
+      Contact Us
+    </button>
+  </div>
+</header>
